@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p148~158</title>
+
+    <style>
+      div {
+        border: 1px solid coral;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>화면에 60자까지 표시되는 한 줄짜리 댓글</h2>
+      <form>
+        <label>한 줄 댓글 : <input type="text" size="60" /></label>
+      </form>
+      <br /><br />
+    </div>
+    <br />
+    <div>
+      <h3>다양한 숫자 입력 폼</h3>
+      <form>
+        <fieldset>
+          <legend>등록 정보</legend>
+          <ul>
+            <li>
+              <label class="reg" for="memder"
+                >참여인원<small>(최대10명)</small></label
+              >
+              <input
+                type="number"
+                id="memder"
+                value="1"
+                min="0"
+                max="10"
+                step="1"
+              />
+            </li>
+            <li>
+              <label class="reg" for="stuffs"
+                >지원물품<small>(1인당 5개)</small></label
+              >
+              <input
+                type="number"
+                id="stuffs"
+                value="1"
+                min="0"
+                max="50"
+                step="5"
+              />
+            </li>
+            <li>
+              <label class="reg" for="satis"
+                >희망단계<small>(하,중,상)</small></label
+              >
+              <input type="range" id="satis" value="1" min="1" max="3" />
+            </li>
+          </ul>
+        </fieldset>
+        <br /><br />
+      </form>
+    </div>
+    <br />
+    <div>
+      <h2>라디오 버튼과 체크박스 삽입하기</h2>
+
+      <form>
+        <fieldset>
+          <legend>신청 과목</legend>
+          <p>이 달에 신청할 과목을 선택하세요.(1과목만 가능)</p>
+          <label
+            ><input type="radio" name="subjact" value="speaking" />회화</label
+          >
+          <label
+            ><input type="radio" name="subjact" value="grammar" />문법</label
+          >
+          <label
+            ><input type="radio" name="subjact" value="writing" />작문</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>메일링</legend>
+          <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요.(복수 선택 가능)</p>
+          <label for=""
+            ><input type="checkbox" name="mailing1" value="news" />해외
+            단신</label
+          >
+          <label for=""
+            ><input type="checkbox" name="mailing2" value="dialog" />5분
+            회화</label
+          >
+          <label for=""
+            ><input
+              type="checkbox"
+              name="mailing3"
+              value="pops"
+            />모닝팝스</label
+          >
+        </fieldset>
+        <br /><br />
+      </form>
+    </div>
+    <br>
+    <div>
+        <h2>색상 선택 폼 삽입하기</h2>
+
+        <form>
+            <fieldset>
+                <legend>과 티셔트 설문</legend>
+                <p>올해 과 티(T)를 만들려고 합니다. 원하는 색상을 추천해 주세요.</p>
+                <label for="">선호색상<input type="color" value="#00ff00"></label>
+            </fieldset><br><br>
+        </form>
+    </div>
+    <br>
+    <div>
+        <h2>날짜 입력 폼 삽입하기</h2>
+
+        <form>
+            <fieldset>
+                <legend>조회 기간 선택</legend>
+                <label for=""><input type="date" id="start"></label>
+                <label for=""><input type="date" id="end"></label>
+            </fieldset>
+        </form>
+    </div>
+    <br>
+    <div>
+        <h2>시간 입력 폼 삽입하기</h2>
+
+        <form>
+            <fieldset>
+                <legend>원하는 대관시간을 선택하세요(오늘)</legend>
+                <label for="">시작 시간<input type="time" value="09:00" id="start1"></label>
+                <label for="">종료 시간<input type="time" value="18:00" id="end1"></label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>대관시간을 선택하세요(다른날짜)</legend>
+                <label for="">시작 시간<input type="datetime-local" value="2025-02-05T09:00" id="start2"></label>
+                <label for="">종료 시간<input type="datetime-local" value="2025-02-05T18:00" id="end2">p</label>
+            </fieldset>
+        </form>
+
+    </div>
+    <br>
+    <div>
+        <h2>submit 버튼과 reset 버튼 삽입하기</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>메일링 리스트 등록</legend>
+                <label for="">메일 주소 <input type="text" ></label>
+                <input type="submit" value="제출">
+                <input type="reset" value="다시입력">
+            </fieldset>
+        </form>
+
+    </div>
+    <br>
+    <div>
+        <h2>submit 버튼에 이미지 사용하기</h2>
+
+        <form>
+            <fieldset>
+                <legend>로그인</legend>
+                <label for="">아이디<input type="text" size="15"></label>
+                <label for="">비밀번호<input type="password" size="15"></label>
+                
+                <input type="image" id="butt" src="04images/login.jpg" alt="login">
+            </fieldset>
+        </form>
+
+    </div>
+    <br>
+    <div>
+        <h2>버튼 삽입하기</h2>
+
+        <form>
+            <fieldset>
+                <legend>버튼</legend>
+                <input type="button" value="새 탭 열기" onclick="window.open()">
+            </fieldset>
+        </form>
+
+    </div>
+    <br>
+    <div>
+        <h2>파일 첨부하기</h2>
+
+        <form>
+            <fieldset>
+                <legend>첨부하기</legend>
+                <input type="button" value="닫기" onclick="window.open()">
+            </fieldset>
+        </form>
+
+    </div>
+  </body>
+</html>

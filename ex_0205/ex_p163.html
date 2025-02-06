@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>텍스트 필드의 글자 길이 지정하기</h1>
+      <!-- <input type="타입" 속성="속성값" value="서버로 넘길 값"> -->
+
+      <form action="">
+        <ul>
+          <li>
+            <label for=""
+              >아이디 :
+              <input
+                type="text"
+                id="user_id"
+                size="10"
+                minlength="4"
+                maxlength="15"
+            /></label>
+            <small style="color: red">4~15자리 이내의 영문과 숫자</small>
+          </li>
+          <li>
+            <label for=""
+              >비밀번호 : <input type="password" id="user_pwd"
+            /></label>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>
