@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 첫 번째 CSS</title>
+    <style>
+        body {
+           background-color: lightblue;
+        }
+        h1 {
+            color: white; 
+            text-align: center;
+        }
+        p {
+            font-family: Verdana;
+            font-size: 20px;
+        }
+        .p1 { 
+            /* 웬만하면 id적용하지 말고 class속성을 활용할 것 
+            id는 정말 중요한 요소에 붙일 것 */
+            border: 1px solid coral;
+            color: coral;
+        }
+        #pp { 
+            /*#태그는 id가 적용된 태그에 효과를 적용하는 것. 
+            id적용은 웬만하면 삼갈것 */
+            color: darkviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>My First CSS Example</h1>
+    <p id="pp">This is a paragraph.</p>
+    <p class="p1">This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+    <p class="p1">This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 복습</title>
+  </head>
+  <body>
+    <div>
+      <!-- method 사용자가 입력한 내용들을 서버 쪽 프로그램으로 어떻게 넘겨줄지 지정 get 보안성 낮음/post 보안성 get보다 높음(입력 내용이 드러나지 않아서)-->
+      <!-- name 폼의 이름을 지정. 한 문서 안에 여러 개의 <form></form>테그가 있을 경우, 폼들을 구분하기 위해 사용. -->
+      <!-- action <form></form> 태그 안의 내용들을 처리해 줄 서버 상의 프로그램을 지정함. -->
+      <!-- target actoin 속성에서 지정한 스크립트 파일을 현재 창이 아닌 다른 위치에 열도록 지정함. -->
+      <form action="search.php" method="post">
+        <input type="text" title="검색" />
+        <input type="submit" value="검색" />
+        <hr />
+        <label for="ex">ex</label>
+        <input type="text" id="ex" />
+        <hr />
+        <!-- id를 지정하면 각각 다른 별개의 객체로 취급 가능. CSS를 이용해 각각 다른 효과를 줄 수 있음. -->
+        <input type="color" />
+        <hr />
+        <!-- input속성 -->
+        <!-- autofocus 페이지 불러오자마자 입력창에 바로 입력 가능하게 해줌. -->
+        <!-- placeholder 입력창에 힌트 표시. -->
+        <!-- readonly 읽기 전용 필드 생성 -->
+        <!-- required 필수로 입력해야 하는 필드 지정 -->
+        <!-- class 각각의 레이블에 이름을 부여 하는 효과, CSS, Javascript로 각각 다른 이름을 가진 레이블에 다른 효과 적용 가능 -->
+        <!-- size 몇 글자까지 보이도록 할 지 설정 -->
+        <!-- minlength, maxlength 최소 몇 글자, 최대 몇 글자 입력 가능한지 설정 가능 -->
+        <!-- <select></select>태그 드롭다운 목록 생성  -->
+        <!-- select태그로 만든 드롭다운 목록에 option태그로 옵션 생성 -->
+        <!-- optgroup태그로 select태그로 만든 드롭다운 목록에 특정 옵션들 서로 묶어서 표현 가능 -->
+        <h4>optgroup예시</h4>
+        <form>
+          <select>
+            <optgroup label="1234">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </optgroup>
+            <optgroup label="5678">
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </optgroup>
+          </select>
+        </form>
+        <hr />
+      </form>
+    </div>
+  </body>
+</html>
