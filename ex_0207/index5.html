@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        section {
+            border: 1px solid coral;
+        }
+      /* 1 */
+      div.s1 {
+        background-color: lightblue;
+      }
+
+      /* 2 */
+      div.s2 > h1 {
+        background-color: green;
+      }
+      div.s2 > div {
+        background-color: lightblue;
+      }
+
+      div.s2 p {
+        background-color: yellow;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- 1 -->
+    <section>
+      <div class="s1">
+        <h1>Hello World!</h1>
+
+        <p>This page has a light blue background color!</p>
+      </div>
+    </section>
+    <!-- 2 -->
+    <section>
+      <div class="s2">
+        <h1>CSS background-color example!</h1>
+        <div>
+          This is a text inside a div element.
+          <p>This paragraph has its own background color.</p>
+          We are still in the div element.
+        </div>
+      </div>
+    </section>
+    <!-- 3 -->
+  </body>
+</html>
