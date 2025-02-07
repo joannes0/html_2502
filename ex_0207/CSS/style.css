@@ -1,0 +1,48 @@
+/* 외부 CSS */
+section {
+  border: 1px solid coral;
+}
+
+section.myelement div {
+  background-color: #FFF4A3;
+}
+
+section.mycontainer div {
+  background-color: #FFF4A3;
+}
+
+section.mycenter-align div {
+  width: 300px;
+  margin: auto;
+  background-color: #FFF4A3;
+}
+
+/* float */
+section.mycontainer2 >  {
+  width:100%;
+  overflow:auto;
+}
+section.mycontainer2 div {
+  width:30%;  
+  float:left;
+}
+
+/* inline-block */
+section.myinline-block div {
+    width: 30%;
+    display: inline-block;
+  }
+
+  /* flex */
+  div.myflex {
+    display: flex;
+  }
+  div.myflex > div {
+    width: 33%;
+  }
+
+  /* grid */
+  div.mygrid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
