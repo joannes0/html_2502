@@ -6,9 +6,9 @@
     <title>Document</title>
 
     <style>
-        section {
-            border: 1px solid coral;
-        }
+      section {
+        border: 1px solid coral;
+      }
       /* 1 */
       div.s1 {
         background-color: lightblue;
@@ -25,7 +25,21 @@
       div.s2 p {
         background-color: yellow;
       }
-      
+
+      /* 3 */
+      div.d1, div.d2, div.d3, div.d4 {
+        background-color: green;
+      }
+      div.d1 {
+        opacity: 0.1;
+      }
+      div.d2 {
+        opacity: 0.3;
+      }
+      div.d3 {
+        opacity: 0.6;
+      }
+
     </style>
   </head>
   <body>
@@ -49,5 +63,31 @@
       </div>
     </section>
     <!-- 3 -->
+    <section>
+      <div class="s3">
+        <h1>Transparent Boxes</h1>
+
+        <p>
+          When using the opacity property to add transparency to the background
+          of an element, all of its child elements become transparent as well.
+          This can make the text inside a fully transparent element hard to
+          read:
+        </p>
+        <div>
+            <div class="d1">
+                <h1>opacity 0.1</h1>
+            </div>
+            <div class="d2">
+                <h1>opacity 0.3</h1>
+            </div>
+            <div class="d3">
+                <h1>opacity 0.6</h1>
+            </div>
+            <div class="d4">
+                <h1>opacity 1 (dafault)</h1>
+            </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
