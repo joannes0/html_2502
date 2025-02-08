@@ -40,6 +40,20 @@
         opacity: 0.6;
       }
 
+      /* 4 */
+      div.a1, div.a2, div.a3, div.a4 {
+        background: rgb(0, 128, 0);
+      }
+      div.a1 {
+        background: rgb(0, 128, 0, 0.1);
+      }
+      div.a2 {
+        background: rgb(0, 128, 0, 0.3);
+      }
+      div.a3 {
+        background: rgb(0, 128, 0, 0.6);
+      }
+
     </style>
   </head>
   <body>
@@ -87,6 +101,51 @@
                 <h1>opacity 1 (dafault)</h1>
             </div>
         </div>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h1>Transparent Boxes 2</h1>
+
+        <P>Result with opacity:</P>
+        <div class="d1">
+          <h1>10% opacity</h1>
+        </div>
+
+        <div class="d2">
+          <h1>30% opacity</h1>
+        </div>
+
+        <div class="d3">
+          <h1>60% opacity</h1>
+        </div>
+
+        <div class="d4">
+          <h1>opacity 1</h1>
+        </div>
+
+        <p>Result with rgba():</p>
+        
+          <div class="a1">
+            <h1>10% opacity</h1>
+          </div>
+
+          <div class="a2">
+            <h1>30% opacity</h1>
+          </div>
+
+          <div class="a3">
+            <h1>60% opacity</h1>
+          </div>
+
+          <div class="a4">
+            <h1>default</h1>
+          </div>
+
+        <p>
+          Notice how the text gets transparent as well as the background 
+          color when using the opacity property.
+        </p>
       </div>
     </section>
   </body>
