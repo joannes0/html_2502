@@ -1,0 +1,48 @@
+section {
+  border: 1px solid coral;
+}
+/* 1 */
+div.s1 {
+  background-color: lightblue;
+}
+
+/* 2 */
+div.s2 > h1 {
+  background-color: green;
+}
+div.s2 > div {
+  background-color: lightblue;
+}
+
+div.s2 p {
+  background-color: yellow;
+}
+
+/* 3 */
+div.d1, div.d2, div.d3, div.d4 {
+  background-color: green;
+}
+div.d1 {
+  opacity: 0.1;
+}
+div.d2 {
+  opacity: 0.3;
+}
+div.d3 {
+  opacity: 0.6;
+}
+
+/* 4 */
+/* class지정시 이름간 공백을 주면 각각 다른 이름으로 인식함 ex)class="a b c d"*/
+div.z {
+  background: rgb(0, 128, 0);
+}
+div.a1 {
+  background: rgb(0, 128, 0, 0.1);
+}
+div.a2 {
+  background: rgb(0, 128, 0, 0.3);
+}
+div.a3 {
+  background: rgb(0, 128, 0, 0.6);
+}
