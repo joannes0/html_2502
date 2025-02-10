@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      section {
+        border: 1px solid coral;
+      }
+      /* 1 */
+      div.q {
+        margin: 70px;
+        border: 1px solid #4caf50;
+      }
+      div.w {
+        border: 1px solid black;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 80px;
+        background-color: lightblue;
+      }
+      /* 3 */
+      div.e {
+        border: 1px solid black;
+        margin: 25px 50px 75px 100px;
+        background-color: lightblue;
+      }
+      /* 4 */
+      div.r {
+        width: 300px;
+        margin: auto;
+        border: 1px solid red;
+      }
+      /* 5 */
+      div.t {
+        border: 1px solid red;
+        margin-left: 100px;
+      }
+      p.t2 {
+        margin-left: inherit;
+      }
+      /* section > div > div.t > p.t2 {
+        margin-left: inherit;
+       } */
+
+      /* 6 */
+      div.y > h1 {
+        margin: 0 0 100px 0;
+      }
+      div.y > h2 {
+        margin: 20px 0 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1 -->
+    <section>
+      <div>
+        <h2>CSS margins</h2>
+        <div class="q">this element has a margin of 70px.</div>
+      </div>
+    </section>
+    <!-- 2 -->
+    <section>
+      <div>
+        <h2>Using individual margin properties</h2>
+        <div class="w">
+          This div element has a top margin of 100px, a right margin of 150px, a
+          bottom margin of 100px, and a left margin of 80px.
+        </div>
+      </div>
+    </section>
+    <!-- 3 -->
+    <section>
+      <div>
+        <h2>The margin shorthand property - 4 values</h2>
+        <div class="e">
+          This div element has a top margin of 25px, a right margin of 50px, a
+          bottom margin of 75px, and a left margin of 100px.
+        </div>
+
+        <hr />
+      </div>
+    </section>
+    <!-- 4 -->
+    <section>
+      <div>
+        <h2>Use of margin: auto</h2>
+        <p>
+          You can set the margin property to auto to horizontally center the
+          element within its contatainer. the element will then take up the
+          specified width, and the remanining space will be split equally
+          between the left and right margins:
+        </p>
+        <div class="r">
+          This div will be horizontally centered because it has margin: auto;
+        </div>
+      </div>
+    </section>
+    <!-- 5 -->
+    <section>
+      <div>
+        <h2>Use of the inherit value</h2>
+        <p>Let the left margin be inherited from the parent element:</p>
+
+        <div class="t">
+          <p class="t2">
+            This paragraph has an inherited left margin (from the div element).
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- 6 -->
+    <section>
+      <div class="y">
+        <p>
+          In this example the h1 element has a bottom margin of 50px and the h2
+          element has a top margin of 20px. So, the vertival margin between h1
+          and h2 should have been 70px (50px + 20px). However, due to margin
+          collapse, the actual margin ends up heing 50px.
+        </p>
+
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+      </div>
+    </section>
+  </body>
+</html>
