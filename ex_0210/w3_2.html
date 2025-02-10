@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>w3</title>
+
+    <style>
+      section {
+        border: 1px solid coral;
+      }
+      /* 1 */
+      div.q {
+        margin: 70px;
+        border: 1px solid #4caf50;
+      }
+      /* 2 */
+      div.w {
+        border: 1px solid black;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 80px;
+        background-color: lightblue;
+      }
+      /* 3 */
+      div.e {
+        border: 1px solid black;
+        margin: 25px 50px 75px 100px;
+        background-color: lightblue;
+      }
+      /* 4 */
+      div.r {
+        border: 1px solid black;
+        margin: 25px 50px 75px;
+        background-color: lightblue;
+      }
+      /* 5 */
+      div.qw {
+        border: 1px solid black;
+        margin: 25px 50px;
+        background-color: lightblue;
+      }
+
+      /* 6 */
+      div.qe {
+        border: 1px solid black;
+        margin: 25px;
+        background-color: lightblue;
+      }
+
+      /* 7 */
+      div.qr {
+        width: 300px;
+        margin: auto;
+        border: 1px solid red;
+      }
+
+      /* 8 */
+      div.qwe {
+        border: 1px solid red;
+        margin-left: 100px;
+      }
+
+      p.qwe2 {
+        margin-left: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1 -->
+    <section>
+      <div>
+        <h2>CSS Padding</h2>
+        <div class="q">This element has a padding of 70px.</div>
+      </div>
+      <br />
+    </section>
+    <!-- 2 -->
+    <section>
+      <div>
+        <h2>Using individual padding properties</h2>
+
+        <div class="w">
+          This div element has a top padding of 50px, a right padding of 30px,
+          bottom padding of 50px, and a left padding of 80px.
+        </div>
+      </div>
+    </section>
+    <!-- 3 -->
+    <section>
+      <div>
+        <h2>The padding shorthand property - 4 values</h2>
+
+        <div class="e">
+          This div element has a top padding of 25px, a right padding of 50px, a
+          bottom padding of 75px, and a left padding of 100px.
+        </div>
+      </div>
+    </section>
+    <!-- 4 -->
+    <section>
+      <div>
+        <h2>The padding shorthand property - 3 values</h2>
+
+        <div class="r">
+          This div element has a top padding of 25px, a right and left padding
+          of 50px, and a bottom padding of 75px.
+        </div>
+      </div>
+    </section>
+    <!-- 5 -->
+    <section>
+      <div>
+        <h2>The padding shorthand property - 2 values</h2>
+
+        <div class="qw">
+          This div element has a top and bottom padding of 25px, and a right and
+          left padding of 50px.
+        </div>
+      </div>
+    </section>
+    <!-- 6 -->
+    <section>
+      <div>
+        <h2>The margin shorthand property - 1 value</h2>
+
+        <div class="qe">
+          This div element has a top, bottom, left, and right margin of 25px.
+        </div>
+      </div>
+    </section>
+    <!-- 7 -->
+    <section>
+      <div>
+        <h2>Use of margin: auto</h2>
+        <p>
+          You can set the margin property to auto to horizontally center the
+          element within its container. The element will then take up the
+          specified width, and the remaining space will be split equally between
+          the left and right margins:
+        </p>
+
+        <div class="qr">
+          This div will be horizontally centered because it has margin: auto;
+        </div>
+      </div>
+    </section>
+    <!-- 8 -->
+    <section>
+      <div>
+        <h2>Use of the inherit value</h2>
+        <p>Let the left margin be inherited from the parent element:</p>
+
+        <div class="qwe">
+          <p class="qwe2">
+            This paragraph has an inherited left margin (from the div element).
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
