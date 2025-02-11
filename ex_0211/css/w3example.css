@@ -1,0 +1,6 @@
+div.ex {
+    height: 500px; /*높이*/
+    width: 100%; /* 너비*/
+    border: 1px solid #4caf50;
+    background-color: powderblue;
+}
