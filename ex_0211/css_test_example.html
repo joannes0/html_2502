@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css test</title>
+    <style>
+      section.s2 > div.d1 > span > p.p1 {
+        color: red;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <!-- css 문법 경로 지정에서 >를 사용할 경우 지정한 경로에 다른 요소가
+   추가되면 css가 적용이 안됨
+   ex)section.s2 > div.d1 > p.p1 이라고 하면 css가 적용 안됨 -->
+  <body>
+    <section class="s2">
+      <div class="d1">
+        <span>
+          <p>ddd</p>
+          <p class="p1">This chapter explains ba bla bla</p>
+        </span>
+      </div>
+    </section>
+  </body>
+</html>

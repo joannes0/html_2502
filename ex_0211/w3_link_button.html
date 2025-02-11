@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Button</title>
+
+    <style>
+      a {
+        font-size: 3em;
+        font-weight: bold;
+        border-radius: 400px; /* 버튼 모서리 둥굴게 */
+      }
+      a:link,
+      a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none; /* text-decoration=밑줄, 취소선 추가 등 텍스트 꾸밈 효과 */
+        display: inline-block; /* display 이 요소가 어떻게 표시되는지 결정. ex)블록, 인라인 등 */
+      }
+      a:hover {
+        color: blue;
+        background-color: pink;
+        text-decoration: none;
+      }
+      a:active {
+        color: yellow;
+        background-color: rgb(45, 48, 2);
+        box-shadow: 10px 10px 10px 10px black; /* 버튼박스 그림자 효과 */
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="s1">
+      <div>
+        <h2>Link Button</h2>
+
+        <p>A link styled as a button</p>
+
+        <a href="./index.html" target="_blank">This is a link</a>
+      </div>
+    </section>
+  </body>
+</html>
