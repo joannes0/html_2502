@@ -1,0 +1,8 @@
+section.s1 h2 {
+    color: rgba(194, 25, 209, 0.637);
+    border-radius: 400px;
+    font-size: 50px;
+    display: inline;
+    padding: 0px 5px;
+    background-color: rgba(0, 255, 255, 0.514);
+}
