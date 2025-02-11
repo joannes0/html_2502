@@ -1,0 +1,26 @@
+/* P221 */
+section.s1 h1 {
+    font-size: 3em;
+}
+section.s1 p {
+    font-size: 1em;
+}
+
+/* P223 */
+.accent {
+    font-variant: small-caps; /* 작은 대문자 */
+    font-weight: bold; /* 굵게 */
+}
+
+/* P224 */
+section.s3 > p {
+    font-style: italic;
+}
+section.s3 > p.txt {
+    font-style: normal;
+}
+
+/* P226 */
+p.txt2 {
+    font: italic 12px/24px 돋움;
+}

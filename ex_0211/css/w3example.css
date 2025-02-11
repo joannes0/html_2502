@@ -4,3 +4,10 @@ div.ex {
     border: 1px solid #4caf50;
     background-color: powderblue;
 }
+div.ex1 {
+    width: 320px;
+    height: 50px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
