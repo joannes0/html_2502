@@ -1,8 +1,36 @@
+section.s1 {
+    background-color: rgba(0, 0, 0, 0.288);
+}
 section.s1 h2 {
     color: rgba(194, 25, 209, 0.637);
     border-radius: 400px;
     font-size: 50px;
-    display: inline;
+    display: inline-block;
     padding: 0px 5px;
-    background-color: rgba(0, 255, 255, 0.514);
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+section.s1 p {
+    font-style: italic;
+    font-weight: bold;
+    color: #fffb13ab;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+section.s1 iframe {
+    background-color: aliceblue;
+}
+
+section.s2 {
+    background-color: rgba(137, 43, 226, 0.103);
+}
+section.s2 h2 {
+    color: azure;
+    text-shadow: 0 0 3px plum, 0 0 4px black, 0 0 5px blueviolet;
+}
+section.s2 p {
+    font-weight: bold;
+    color: azure;
+    text-shadow: 0 0 3px plum, 0 0 4px black, 0 0 5px blueviolet;
+}
+section.s2 iframe {
+    background-color: rgba(49, 2, 10, 0.356);
 }
