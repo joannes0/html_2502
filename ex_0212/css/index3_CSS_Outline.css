@@ -1,0 +1,174 @@
+body {
+  padding: 30px;
+}
+
+section {
+  border: 1px solid coral;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(0, 255, 255, 0.13);
+}
+/* 1 */
+.s1 p {
+  border: 2px solid black;
+  outline: green solid 10px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 2 */
+.s2 p {
+  outline-color: red;
+  outline-width: 5px;
+}
+.s2 p.dotted {
+  outline-style: dotted;
+}
+.s2 p.dashed {
+  outline-style: dashed;
+}
+.s2 p.solid {
+  outline-style: solid;
+}
+.s2 p.double {
+  outline-style: double;
+}
+.s2 p.groove {
+  outline-style: groove;
+}
+.s2 p.ridge {
+  outline-style: ridge;
+}
+.s2 p.inset {
+  outline-style: inset;
+}
+.s2 p.outset {
+  outline-style: outset;
+}
+
+/* 3 */
+.s3 p.ex1 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thin;
+}
+.s3 p.ex2 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: medium;
+}
+.s3 p.ex3 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: thick;
+}
+.s3 p.ex4 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: red;
+  outline-width: 4px;
+}
+
+/* 4 */
+.s4 p.ex1 {
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: red;
+}
+.s4 p.ex2 {
+  border: 2px solid black;
+  outline-style: dotted;
+  outline-color: blue;
+}
+.s4 p.ex3 {
+  border: 2px solid black;
+  outline-style: outset;
+  outline-color: grey;
+}
+
+/* 5 */
+.s5 p.ex1 {
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: #f00;
+}
+.s5 p.ex2 {
+  border: 2px solid black;
+  outline-style: dotted;
+  outline-color: #0000ff;
+}
+.s5 p.ex3 {
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: #bbbbbb;
+}
+
+/* 6 */
+.s6 p.ex1 {
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: rgb(255, 0, 0);
+}
+.s6 p.ex2 {
+  border: 2px solid black;
+  outline-style: dotted;
+  outline-color: rgb(0, 0, 255);
+}
+
+.s6 p.ex3 {
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: rgb(187, 187, 187);
+}
+
+/* 7 */
+.s7 p.ex1 {
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: hsl(0, 100%, 50%);
+}
+.s7 p.ex2 {
+  border: 2px solid black;
+  outline-style: dotted;
+  outline-color: hsl(240, 100%, 50%);
+}
+.s7 p.ex3 {
+  border: 2px solid black;
+  outline-style: solid;
+  outline-color: hsl(0, 0%, 73%);
+}
+
+/* 8 */
+.s8 p.ex1 {
+    outline: dashed;
+}
+.s8 p.ex2 {
+    outline: dotted red;
+}
+.s8 p.ex3 {
+    outline: 5px solid yellow;
+}
+.s8 p.ex4 {
+    outline: thick ridge pink;
+}
+
+/* 9 */
+.s9 p {
+    margin: 30px;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+}
+
+/* 10 */
+.s10 p {
+    margin: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+}
