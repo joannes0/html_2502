@@ -52,5 +52,7 @@ p {
     overflow: visible;
 }
 .s4 p.ex1 {
-    
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
 }
