@@ -1,0 +1,56 @@
+body {
+    margin: 20px;
+}
+section {
+    border: 1px solid coral;
+    margin: 20px;
+    padding: 20px;
+}
+p {
+    border: 1px solid coral;
+}
+/* s1 */
+.s1 p.align-left {
+    text-align: left;
+    
+}
+.s1 p.align-right {
+    text-align: right;
+}
+.s1 p.align-center {
+    text-align: center;
+}
+.s1 p.align-justify {
+    text-align: justify;
+}
+
+/* s2 */
+.s2 p.indent1 {
+    text-indent: 159px;
+}
+.s2 p.indent2 {
+    text-indent: 5%;
+}
+
+/* s3 */
+.s3 p.small-line {
+    line-height: 0.7;
+}
+.s3 p.big-line {
+    line-height: 2;
+}
+
+/* 4 */
+.s4 p.content {
+    border: 1px solid #ccc;
+    width: 300px; /* 단락 너비 */
+    white-space: nowrap; /* 줄바꿈 X */
+    overflow: hidden; /* 넘친 부분 히든 */
+    text-overflow: ellipsis; /* 말 줄임표 표시 */
+}
+.s4 p.content:hover {
+    overflow: visible;
+}
+.s4 p.ex1 {
+    
+}
