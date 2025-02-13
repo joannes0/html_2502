@@ -1,0 +1,312 @@
+body {
+  margin: 20px;
+  padding: 20px;
+}
+section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid violet;
+}
+
+/* s1 */
+section.s1 {
+  border: 1px solid gray;
+  padding: 8px;
+}
+.s1 h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4caf50;
+}
+.s1 p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+.s1 a {
+  text-decoration: none;
+  color: #008cba;
+}
+/* 
+text-indent=들여쓰기 길이(px,em,rem,% 등)지정
+text-align=텍스트 정렬
+letter-spacing=글자 간격 조정
+text-transform
+=글자 모양 변형(대소문자 변경,css스타일만으로 텍스트 변경(html수정 없이)
+,가독성 향상(텍스트 강조 등) 
+*/
+
+/* s2 */
+section.s2 {
+  color: blue;
+}
+.s2 h1 {
+  color: green;
+}
+
+/* s3 */
+.s3 {
+  background-color: lightgray;
+  color: blue;
+}
+.s3 h1 {
+  background-color: black;
+  color: white;
+}
+.s3 div {
+  background-color: blue;
+  color: white;
+}
+
+/* s4 */
+.s4 h1 {
+  text-align: center;
+}
+.s4 h2 {
+  text-align: left;
+}
+.s4 h3 {
+  text-align: right;
+}
+
+/* s5 */
+.s5 div {
+  border: 1px solid black;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+}
+/* justify=텍스트 줄의 시작과 끝을 모두 부모 요소의 양쪽 가장자리에 맞춤  */
+
+/* s6 */
+/* text-align-last=텍스트 마지막 줄 정렬 */
+.s6 p.a {
+  text-align-last: right;
+}
+.s6 p.b {
+  text-align-last: center;
+}
+.s6 p.c {
+  text-align-last: justify;
+}
+
+/* s7 */
+/* direction=텍스트의 방향 설정/ex)한글 처럼 왼쪽에서 오른쪽으로 쓰는 지,
+아랍어처럼 오른쪽에서 왼쪽으로 쓰는 지 결정/레이아웃 방향에도 영향 줌
+unicode-bidi=양방향 텍스트 처리 방식 세밀하게 제어, direction과 함께 사용됨
+direction은 언어 웹 페이지 전체 텍스트 방향에 관여, 
+unicode-bidi는 복잡한 양방향 텍스트 혼합 처리에 관여
+direction 광범위 통상적 관여/unicode-bidi 국소적인 범위 자세하게 관여 */
+.s7 p.ex1 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+/* s8 */
+.s8 img.a {
+  vertical-align: baseline;
+}
+.s8 img.b {
+  vertical-align: text-top;
+}
+.s8 img.c {
+  vertical-align: text-bottom;
+}
+.s8 img.d {
+  vertical-align: sub;
+}
+.s8 img.e {
+  vertical-align: super;
+}
+
+/* s9 */
+.s9 h1 {
+  text-decoration: overline;
+}
+.s9 h2 {
+  text-decoration: line-through;
+}
+.s9 h3 {
+  text-decoration: underline;
+}
+.s9 p.ex {
+  text-decoration: overline underline;
+}
+
+/* s10 */
+.s10 h1 {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+}
+.s10 h2 {
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+}
+.s10 h3 {
+  text-decoration-line: underline;
+  text-decoration-color: green;
+}
+.s10 p {
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;
+}
+
+/* s11 */
+.s11 h1 {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+.s11 h2 {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+.s11 h3 {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+.s11 p.ex1 {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+.s11 p.ex2 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+.s11 p.ex3 {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
+/* s12 */
+.s12 h1 {
+  text-decoration-line: underline;
+  text-decoration-thickness: auto;
+}
+.s12 h2 {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+.s12 h3 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 25%;
+}
+.s12 p {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;
+}
+
+/* s13 */
+.s13 h1 {
+  text-decoration: underline;
+}
+.s13 h2 {
+  text-decoration: underline red;
+}
+.s13 h3 {
+  text-decoration: underline red double;
+}
+.s13 p {
+  text-decoration: underline red double 5px;
+}
+
+/* s14 */
+.s14 a {
+  text-decoration: none;
+}
+
+/* s15 */
+.s15 p.uppercase {
+  text-transform: uppercase;
+}
+.s15 p.lowercase {
+  text-transform: lowercase;
+}
+.s15 p.capitalize {
+  text-transform: capitalize;
+}
+
+/* s16 */
+.s16 p {
+  text-indent: 50px;
+}
+
+/* s17 */
+.s17 h2 {
+  letter-spacing: 5px;
+}
+.s17 h3 {
+  letter-spacing: -2px;
+}
+
+/* s18 */
+.s18 p.small {
+  line-height: 0.7;
+}
+p.big {
+  line-height: 1.8;
+}
+
+/* s19 */
+.s19 p.one {
+  word-spacing: 10px;
+}
+.s19 p.two {
+  word-spacing: -2px;
+}
+
+/* s20 */
+.s20 p {
+  white-space: nowrap;
+}
+
+/* s21 */
+.s21 h1 {
+  text-shadow: 2px 2px;
+}
+
+/* s22 */
+.s22 h1 {
+  text-shadow: 2px 2px red;
+}
+
+/* s23 */
+.s23 h1 {
+  text-shadow: 2px 2px 5px red;
+}
+
+/* s24 */
+.s24 h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* s25 */
+.s25 h1 {
+  text-shadow: 0 0 3px #f00;
+}
+
+/* s26 */
+.s26 h1 {
+  text-shadow: 0 0 3px #f00, 0 0 5px #00f;
+}
+
+/* s27 */
+.s27 h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* center */
+.s21,
+.s22,
+.s23,
+.s24,
+.s25,
+.s26,
+.s27 {
+  text-align: center;
+}
