@@ -6,6 +6,7 @@ section {
   margin: 20px;
   padding: 20px;
   border: 1px solid violet;
+  background-color: ivory;
 }
 
 /* s1 */
@@ -263,6 +264,8 @@ p.big {
   white-space: nowrap;
 }
 
+
+/* Text-Shadow */
 /* s21 */
 .s21 h1 {
   text-shadow: 2px 2px;
