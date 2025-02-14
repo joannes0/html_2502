@@ -291,3 +291,11 @@ section {
 .s10 .grad {
   background: linear-gradient(to bottom, green, white);
 }
+
+/* Quiz */
+.s11 .d1 .container {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid blue;
+  background-color: rgba(0, 0, 255, 0.2);
+}
