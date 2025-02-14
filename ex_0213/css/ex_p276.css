@@ -251,3 +251,43 @@ section {
   background: -o-radial-gradient(red, yellow 20%, skyblue);
   background: radial-gradient(red, yellow 20%, skyblue);
 }
+
+/* p283 */
+.s8 div {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.s8 .grad1 {
+  background: red;
+  background: -webkit-linear-gradient(yellow, red 20px);
+  background: -moz-repeating-linear-gradient(yellow, red 20px);
+  background: -o-repeating-linear-gradient(yellow, red 20px);
+  background: repeating-linear-gradient(yellow, red 20px);
+}
+
+/* p284 */
+.s9 div {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.s9 .grad2 {
+  background: red;
+  background: -webkit-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+  background: -moz-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+  background: -o-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+  background: repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+}
+
+/* p285 */
+.s10 div {
+  width: 500px;
+  height: 300px;
+  margin: 10px;
+}
+.s10 .grad {
+  background: linear-gradient(to bottom, green, white);
+}

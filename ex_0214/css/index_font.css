@@ -1,0 +1,233 @@
+body {
+  margin: 20px;
+  padding: 20px;
+}
+section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid green;
+  display: block;
+}
+
+/* 글꼴 패밀리 */
+.s1 .p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+.s1 p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.s1 .p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+/* 웹 안전 글꼴 */
+.s2 p {
+  font-family: Tahoma, Verdana, sans-serif;
+}
+.s3 {
+  font-family: Arial, sans-serif;
+}
+.s4 {
+  font-family: Verdana, sans-serif;
+}
+.s5 {
+  font-family: Tahoma, sans-serif;
+}
+.s6 {
+  font-family: "Trebuchet MS", sans-serif;
+}
+.s7 {
+  font-family: "Times New Roman", serif;
+}
+.s8 {
+  font-family: Georgia, serif;
+}
+.s9 {
+  font-family: Garamond, serif;
+}
+.s10 {
+  font-family: "Courier New", monospace;
+}
+.s11 {
+  font-family: "Brush Script MT", cursive;
+}
+
+
+/* 글꼴 대체 (font fallbacks) */
+/* serif */
+.s12 .d1 {
+  font-family: "Amatic SC", "Times New Roman", Times, serif; /* Amatic SC 폰트로 대체 */
+}
+.s12 .d2 {
+  font-family: Georgia, serif;
+}
+.s12 .d3 {
+  font-family: Garamond, serif;
+}
+/* sans-serif */
+.s13 .d1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.s13 .d2 {
+  font-family: Tahoma, Verdana, sans-serif;
+}
+.s13 .d3 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.s13 .d4 {
+  font-family: Geneva, Verdana, sans-serif;
+}
+/* monospace */
+.s14 {
+  font-family: "Courier New", Courier, monospace;
+}
+/* cursive */
+.s15 {
+  font-family: "Brush Script MT", cursive;
+}
+/* fantasy */
+.s16 {
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+
+/* 글꼴 스타일 */
+/* 스타일 */
+.s17 p.normal {
+  font-style: normal;
+}
+.s17 p.italic {
+  font-style: italic;
+}
+.s17 p.oblique {
+  font-style: oblique;
+}
+/* 두께 */
+.s18 p.normal {
+  font-weight: normal;
+}
+.s18 p.light {
+  font-weight: lighter;
+}
+.s18 p.thick {
+  font-weight: bold;
+}
+.s18 p.thicker {
+  font-weight: 900;
+}
+/* 변형 */
+.s19 .normal {
+    font-variant: normal;
+} 
+.s19 .small {
+    font-variant: small-caps;
+}
+
+
+/* 글꼴 크기 */
+/* px */
+.s20 h1 {
+    font-size: 40px;
+}
+.s20 h2 {
+    font-size: 30px;
+}
+.s20 p {
+    font-size: 14px;
+}
+/* em */
+.s21 h1 {
+    font-size: 2.5em;
+}
+.s21 h2 {
+    font-size: 1.875em;
+}
+.s21 p {
+    font-size: 0.875em;
+}
+/* %, em */
+.s22 {
+    font-size: 100%;
+}
+.s22 h1 {
+    font-size: 2.5em;
+}
+.s22 h2 {
+    font-size: 1.875em;
+}
+.s22 p {
+    font-size: 0.875em;
+}
+
+
+/* 구글 폰트 */
+.s24 .d1 {
+    font-family: "Sofia", sans-serif;
+}
+.s24 .d2 {
+    font-family: "Trirong", serif;
+}
+.s24 .d3 {
+    font-family: "Audiowide", sans-serif;
+}
+/* 여러개의 구글 폰트 사용 */
+.s25 .a {
+    font-family: "Audiowide",sans-serif;
+}
+.s25 .b {
+    font-family: "Sofia", sans-serif;
+}
+.s25 .c {
+    font-family: "Trirong",serif;
+}
+/* 구글 폰트 스타일링 */
+.s26 {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px #ababab;
+}
+/* 글꼴 효과 활성화 */
+.s27 div {
+    margin: 10px;
+    padding: 0 0 0 50px;
+    border: 1px solid green;
+}
+.s27 .d1 {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+}
+.s27 .d2 {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+}
+
+
+/* 글꼴 페어링 */
+.s28 .d1 {
+    background-color: black;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    color: gray;
+}
+.s28 .d1 h1 {
+    font-family: Georgia, serif;
+    font-size: 60px;
+    color: white;
+}
+.s28 .d2 {
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+.s28 .d2 h1 {
+    font-family: Georgia, serif;
+    font-size: 46px;
+}
+.s28 .d3 {
+    font-family: Garamond, serif;
+    font-size: 16px;
+}
+.s28 .d3 h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 46px;
+}
