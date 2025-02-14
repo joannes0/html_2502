@@ -1,0 +1,72 @@
+section.s17 div{
+    font-family: "맑은 고딕", "고딕", "굴림";
+}
+.s17 header {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #069;
+    padding: 10px;
+    overflow: hidden;
+}
+.s17 header h1 {
+    width: 40%;
+    float: left;
+    color: #fff;
+}
+.s17 header nav {
+    width: 60%;
+    float: right;
+}
+.s17 nav ul {
+    list-style-type: none;
+}
+.s17 nav ul li {
+    display: inline;
+    float: left;
+    margin: 15px;
+}
+.s17 nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.s17 p {
+    font-size: 15px;
+    line-height: 20px;
+}
+.s17 dt {
+    font-weight: bold;
+    color: purple;
+}
+.s17 h1 {
+    font-size: 2em;
+}
+.s17 section {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid #333;
+    overflow: hidden;
+}
+.s17 article h3 {
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}
+.s17 aside {
+    clear: both;
+    height: auto;
+    padding: 10px;
+}
+.s17 footer {
+    clear: both;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
