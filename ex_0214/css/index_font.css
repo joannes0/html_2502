@@ -294,3 +294,12 @@ section {
   font-family: Oswald, sans-serif;
   font-size: 46px;
 }
+
+
+/* 글꼴 속기(font shorthand) */
+.s29 p.a {
+  font: 20px Arial, sans-serif;
+}
+.s29 p.b {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
