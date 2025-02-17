@@ -23,6 +23,3 @@ section {
 .s5 h1.hidden {
     visibility: hidden;
 }
-.s6 h1 {
-    display: contents
-}
