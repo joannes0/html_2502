@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 js var</title>
+  </head>
+  <body>
+    <p>처음 선언시 자동 선언</p>
+    <p id="demo1">
+      <script>
+        x = 5;
+        y = 6;
+        z = x + y;
+        document.getElementById("demo1").innerHTML =
+          "The value of z is: " + z + "<hr>";
+      </script>
+    </p>
+
+    <p>var</p>
+    <p id="demo2">
+      <script>
+        var x2 = 5;
+        var y2 = 6;
+        var z2 = x2 + y2;
+        document.getElementById("demo2").innerHTML =
+          "The value of z2 is: " + z2 + "<hr>";
+      </script>
+    </p>
+
+    <p>let</p>
+    <p id="demo3">
+      <script>
+        let x3 = 5;
+        let y3 = 6;
+        let z3 = x3 + y3;
+        document.getElementById("demo3").innerHTML =
+          "The value of z3 is: " + z3 + "<hr>";
+      </script>
+    </p>
+
+    <p>const</p>
+    <p id="demo4">
+      <script>
+        const x4 = 5;
+        const y4 = 6;
+        const z4 = x4 + y4;
+        document.getElementById("demo4").innerHTML =
+          "The value of z4 is: " + z4 + "<hr>";
+      </script>
+    </p>
+
+    <p>혼합된 예시</p>
+    <p id="demo5">
+      <script>
+        const price1 = 5;
+        const price2 = 6;
+        let total = price1 + price2;
+        document.getElementById("demo5").innerHTML =
+          "The total is: " + total + "<hr>";
+      </script>
+    </p>
+
+    <p>데이터 유형</p>
+    <p id="demo6">
+      <script>
+        const pi = 3.14;
+        let person = "John Doe";
+        let answer = "Yes I am!";
+        document.getElementById("demo6").innerHTML =
+          pi + "<br>" + answer + "<hr>";
+      </script>
+    </p>
+
+    <p>변수 선언</p>
+    <p id="demo7">
+      <script>
+        let carName = "Volvo";
+        document.getElementById("demo7").innerHTML = carName + "<hr>";
+      </script>
+    </p>
+
+    <p>하나의 문장, 다수의 변수</p>
+    <p id="demo8">
+      <script>
+        let person2 = "John Doe",
+          carName2 = "Volvo",
+          price3 = 200;
+        document.getElementById("demo8").innerHTML = carName2;
+      </script>
+    </p>
+    <p id="demo9">
+        <script>
+            let person3 = "John Doe",
+          carName3 = "Volvo",
+          price4 = 200;
+        document.getElementById("demo9").innerHTML = carName3 + "<hr>";
+        </script>
+      </p>
+    <p>값 = 정의 되지 않음</p>
+    <p id="demo10">
+      <script>
+        let carName4;
+        document.getElementById("demo10").innerHTML = carName4 + "<hr>";
+      </script>
+    </p>
+
+    <p>변수 다시 선언</p>
+    <p id="demo11">
+      <script>
+        var carName5 = "Volvo";
+        var carName5;
+        document.getElementById("demo11").innerHTML = carName5 + "<hr>";
+      </script>
+    </p>
+
+    <p>자바스크립트 산술 연산</p>
+    <p id="demo12">
+      <script>
+        let x5 = 5 + 2 + 3;
+        document.getElementById("demo12").innerHTML = x5;
+      </script>
+    </p>
+    <p id="demo13">
+      <script>
+        let x6 = "John" + " " + "Doe";
+        document.getElementById("demo13").innerHTML = x6;
+      </script>
+    </p>
+    <p id="demo14">
+        <!-- 따옴표로 숫자를 묶으면 나머지 숫자는 문자열로 처리  -->
+      <script>
+        let x7 = "5" + 2 + 3;
+        document.getElementById("demo14").innerHTML = x7;
+      </script>
+    </p>
+    <p id="demo15">
+        <!-- 따옴표로 숫자를 묶으면 나머지 숫자는 문자열로 처리2
+         이 경우 따옴표로 묶은 숫자 뒤 부터 문자열 처리 -->
+      <script>
+        let x8 = 2 + 3 + "5" + 6 + 7;
+        document.getElementById("demo15").innerHTML = x8 + "<hr>";
+      </script>
+    </p>
+
+    <p>자바스크립트 달러기호 $</p>
+    <p id="demo16">
+      <script>
+        let $$$ = 2;
+        let $myMoney = 5;
+        document.getElementById("demo16").innerHTML = $$$ + $myMoney + "<hr>";
+      </script>
+    </p>
+
+    <p>자바스크립트 밑줄</p>
+    <p id="demo17">
+      <script>
+        let _x = 2;
+        let _100 = 5;
+        document.getElementById("demo17").innerHTML = _x + _100 + "<hr>";
+      </script>
+    </p>
+    <p id="demo18">
+      <script></script>
+    </p>
+    <p id="demo19">
+      <script></script>
+    </p>
+    <p id="demo20">
+      <script></script>
+    </p>
+  </body>
+</html>
