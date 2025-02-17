@@ -293,9 +293,59 @@ section {
 }
 
 /* Quiz */
+/* quiz 1 */
+.s11 {
+  font-family: "맑은 고딕", 돋움;
+}
 .s11 .d1 .container {
   width: 500px;
   padding: 10px;
   border: 1px solid blue;
   background-color: rgba(0, 0, 255, 0.2);
+}
+.s11 .d1 .container h1 {
+  font-family: 17px;
+}
+.s11 .d1 .container p {
+  font-size: 16px;
+  line-height: 25px;
+}
+/* quiz 2 */
+.s11 .d2 .container {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid blue;
+  background-color: rgba(0, 0, 255, 0.2);
+}
+.s11 .d2 .container h1 {
+  font-family: 17px;
+}
+.s11 .d2 .container p {
+  font-size: 16px;
+  line-height: 25px;
+}
+/* quiz 3 */
+.s11 .d3 .container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: url(../image/apple-bg.jpg);
+  background-size: cover;
+}
+.s11 .d3 .container .content {
+  position: absolute;
+  top: 300px;
+  width: 90%;
+  padding: 10px;
+  background: rgba(255, 255, 255, .5);
+}
+.s11 .d3 .container h1 {
+  font-size: 30px;
+  text-align: center;
+}
+.s11 .d3 .container p {
+  font-size: 16px;
+  line-height: 25px;
 }
