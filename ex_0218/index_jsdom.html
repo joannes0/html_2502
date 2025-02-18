@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javasctript html dom</title>
+    
+    <style>
+        section {
+            margin: 20px;
+            border: 1px solid coral;
+            padding: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <section class="s1">
+      <!-- id로 html요소 찾기 -->
+      <h2>자바스크립트 HTML DOM</h2>
+
+      <p id="intro">ID로 HTML 요소 찾기</p>
+      <p>이 예제에서는 <b>getElementsByID</b> 메서드를 보여줍니다.</p>
+
+      <p id="demo1"></p>
+    </section>
+
+    <section class="s2">
+      <!-- tag name으로 html요소 찾기 -->
+      <h2>자바스크립트 htnml dom</h2>
+
+      <p>태그이름으로 html 요소 찾기.</p>
+      <p>이 예제에서는 <b>getElementsByTagName</b> 메서드를 보여줍니다.</p>
+
+      <p id="demo2"></p>
+    </section>
+
+    <section class="s3">
+      <!-- id="main"다음, <p>내부의 모든 요소 찾기 -->
+      <h2>javasctript HTML DOM</h2>
+      <div id="main">
+        <p>FFFFFFFFFinding HTML Elements by Tag Name</p>
+        <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+      </div>
+
+      <p id="demo3"></p>
+    </section>
+
+    <section class="s4">
+      <!-- 클래스 이름으로 HTML 요소 찾기 -->
+      <h2>JavaScript HTML DOM</h2>
+
+      <p>Finding HTML Elements by Class Name.</p>
+      <p class="intro2">HHHHHHHHello World!</p>
+      <p class="intro2">
+        This example demonstrates the <b>getElementsByClassName</b> method.
+      </p>
+
+      <p id="demo4"></p>
+    </section>
+
+    <section class="s5">
+      <!-- CSS 선택기로 HTML 요소 찾기 -->
+      <h2>JavaScript HTML DOM</h2>
+
+      <p>Finding HTML Elements by Query Selector</p>
+      <p class="intro3">HHHHHHHHHello World!.</p>
+      <p class="intro3">
+        This example demonstrates the <b>querySelectorAll</b> method.
+      </p>
+
+      <p id="demo5"></p>
+    </section>
+
+    <section class="s6">
+      <!-- HTML 객체 컬렉션으로 HTML 요소 찾기 -->
+      <h2>JavaScript HTML DOM</h2>
+      <p>Finding HTML Elements Using <b>document.forms</b>.</p>
+
+      <form id="frm1" action="/action_page.php">
+        First name: <input type="text" name="fname" value="Donald" /><br />
+        Last name: <input type="text" name="lname" value="Duck" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+
+      <p>These are the values of each element in the form:</p>
+
+      <p id="demo6"></p>
+    </section>
+    <script src="./js/index_jsdom.js"></script>
+  </body>
+</html>
