@@ -124,3 +124,43 @@ if(sec_s6.length > 0) {
     sec_s6Element.appendChild(noticeText);
   }
 }
+
+//p78
+let id = 'easy1004';
+let pw = '112233';
+
+let user_id = 'easy1004';
+let user_pw = '112233';
+// let user_id = prompt('아이디는?', '');
+// let user_pw = prompt('비밀번호는?', '');
+const sec_s7 = document.getElementsByClassName('s7');
+
+if(sec_s7.length > 0) {
+  let sec_s7Element = sec_s7[0];
+
+  if(id == user_id) {
+    if(pw == user_pw) {
+      const noticeText = document.createElement('p');
+      noticeText.textContent = user_id + '님 반갑습니다!';
+      sec_s7Element.appendChild(noticeText);
+    } else {
+      alert('비밀번호가 일치하지 않습니다.');
+      location.reload();
+    }
+  } else {
+    alert('아이디가 일치하지 않습니다.');
+    location.reload();
+  }
+}
+
+// p80
+let numb = 10;
+let user = '홍길동';
+
+const sec_s8 = document.getElementsByClassName('s8');
+
+if(sec_s8.length > 0) {
+  let sec_s8Element = sec_s8[0];
+
+  if()
+}
