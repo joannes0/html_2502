@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 JavaScript DOM Events</title>
+
+    <style>
+      body {
+        margin: 20px;
+        padding: 30px;
+        background-color: rgba(10, 10, 10, 0.8);
+      }
+      section {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 20px;
+        background-color: rgba(90, 90, 90, 0.8);
+        color: azure;
+      }
+    </style>
+  </head>
+  <body onload="checkCookies()">
+    <!-- 이벤트에 반응하기 -->
+    <section class="s1">
+      <h1>JavaScript HTML Events</h1>
+      <h2>The onclick Attribute</h2>
+
+      <h2 onclick="this.innerHTML='!!!!!!Ooops!!!!!!'">Click on this text!</h2>
+    </section>
+    <section class="s2">
+      <h1>JavaScript HTML Events</h1>
+      <h2>The onclick Attribute</h2>
+
+      <h2 onclick="changeText(this)">Click on this text!</h2>
+    </section>
+
+    <!-- HTML 이벤트 속성 -->
+    <section class="s3">
+      <h1>JavaScript HTML Events</h1>
+      <h2>The onclick Attribute</h2>
+
+      <p>Click the button to display the date.</p>
+      <button onclick="displayDate()">The time is?</button>
+
+      <p id="demo"></p>
+    </section>
+
+    <!-- HTML DOM을 사용하여 이벤트 할당 -->
+    <section class="s4">
+      <h1>JavaScript HTML Events</h1>
+      <h2>The onclick Events</h2>
+
+      <p>Click "Try it" to execute the displayDate2() function.</p>
+      <button id="myBtn">Try it</button>
+
+      <p id="demo2"></p>
+    </section>
+
+    <!-- onload 및 onunload 이벤트 -->
+    <section class="s5">
+      <h1>JavaScript HTML Events</h1>
+      <h2>The onload Attribute</h2>
+
+      <p id="demo3"></p>
+    </section>
+    <section class="s6"></section>
+    <section class="s7"></section>
+    <section class="s8"></section>
+    <section class="s9"></section>
+    <script src="./js/index2_DOMEvents.js"></script>
+  </body>
+</html>

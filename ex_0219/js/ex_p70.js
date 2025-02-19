@@ -96,3 +96,31 @@ if (sec_s5.length > 0) {
     sec_s5Element.appendChild(noticeText);
   }
 }
+
+
+//p76
+let mon = 11
+// let mon = prompt('현재는 몇 월입니까?', ' ');
+const sec_s6 = document.getElementsByClassName('s6');
+
+if(sec_s6.length > 0) {
+  let sec_s6Element = sec_s6[0];
+
+  if(mon >= 9 && mon <= 11){
+    const noticeText = document.createElement('p');
+    noticeText.textContent = '독서의 계절 가을이네요!!';
+    sec_s6Element.appendChild(noticeText);
+  } else if(mon >= 6 && mon <= 8){
+    const noticeText = document.createElement('p');
+    noticeText.textContent = '여행가기 좋은 여름이네요!!';
+    sec_s6Element.appendChild(noticeText);
+  } else if(mon >= 3 && mon <= 5) {
+    const noticeText = document.createElement('p');
+    noticeText.textContent = '햇살 가득한 봄이네요!!';
+    sec_s6Element.appendChild(noticeText);
+  } else {
+    const noticeText = document.createElement('p');
+    noticeText.textContent = '스키의 계절 겨울이네요!!';
+    sec_s6Element.appendChild(noticeText);
+  }
+}
