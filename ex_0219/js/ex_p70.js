@@ -154,7 +154,7 @@ if(sec_s7.length > 0) {
 }
 
 // p80
-let numb = 10;
+let num2 = 10;
 let user = '홍길동';
 
 const sec_s8 = document.getElementsByClassName('s8');
@@ -162,5 +162,22 @@ const sec_s8 = document.getElementsByClassName('s8');
 if(sec_s8.length > 0) {
   let sec_s8Element = sec_s8[0];
 
-  if()
+  if(num2 > 5) {
+    let num2 = 50;
+    num2 = num2 + 10;
+  }
+  const noticeText = document.createElement('p');
+  noticeText.textContent = `${num2}`;
+  sec_s8Element.appendChild(noticeText);
+  const br1 = document.createElement('br');
+  sec_s8Element.appendChild(br1);
+
+  if(user != '') {
+    user = '김길동';
+  }
+  const userText = document.createElement('p');
+  userText.textContent = `${user}`;
+  sec_s8Element.appendChild(userText);
+  const br2 = document.createElement('br');
+  sec_s8Element.appendChild(br2);
 }
