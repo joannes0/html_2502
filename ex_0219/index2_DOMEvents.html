@@ -65,10 +65,73 @@
 
       <p id="demo3"></p>
     </section>
-    <section class="s6"></section>
-    <section class="s7"></section>
-    <section class="s8"></section>
-    <section class="s9"></section>
+
+    <!-- onchange 이벤트 -->
+    <section class="s6">
+      <h1>JavaScript HTML Events</h1>
+      <h2>The onchange Attribute</h2>
+
+      Enter your name:
+      <input type="text" id="fname" onchange="upperCaseOnChange()" />
+      <p>
+        When you leave the input field, a function transforms the input to upper
+        case.(입력후 엔터-> 대문자로 변환)
+      </p>
+    </section>
+
+    <!-- oninput -->
+    <section class="s8">
+      <h1>JavaScript HTML Events</h1>
+      <h2>The oninput Attribute</h2>
+
+      Enter your name:
+      <input type="text" id="fname2" oninput="upperCaseOnInput()" />
+      <p>
+        When you write in the input field, a function is triggered to transform
+        the input to upper case.(입력시 대문자로 변환)
+      </p>
+    </section>
+
+    <!-- onmouseover 및 onmouseout 이벤트 -->
+    <section class="s7">
+      <h1>JavaScript HTML Events</h1>
+      <h2>The onmouseover Attribute</h2>
+
+      <div
+        onmouseover="mOver(this)"
+        onmouseout="mOut(this)"
+        style="
+          background-color: #d84a38;
+          border-radius: 20px;
+          width: 120px;
+          height: 20px;
+          padding: 10px;
+          text-align: center;
+          font-weight: 16px;
+        "
+      >
+        Mouse Over Me
+      </div>
+    </section>
+
+    <section class="s9">
+      <h1>JavaScript HTML Events</h1>
+      <h2>The onmousedown Attribute</h2>
+
+      <div
+        onmousedown="mDown(this)"
+        onmouseup="mUp(this)"
+        style="
+          background-color: #d84a38;
+          border-radius: 20px;
+          width: 120px;
+          height: 20px;
+          padding: 10px;
+          text-align: center;
+          font-weight: 16px;
+        "
+      >Click Me</div>
+    </section>
     <script src="./js/index2_DOMEvents.js"></script>
   </body>
 </html>
