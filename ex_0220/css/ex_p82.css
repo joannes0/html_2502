@@ -1,0 +1,41 @@
+body {
+    background-color: rgba(0, 0, 0, 0.247);
+    margin: 10px;
+    padding: 10px;
+    
+  }
+  section {
+    background-color: rgba(159, 217, 255, 0.37);
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px;
+    padding: 20px;
+  }
+  div {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    padding: 30px;
+    font-weight: bold;
+   
+  }
+  .d3,
+  .d2 {
+    display: flex;
+  }
+  .s2 .d3 .blue {
+    color: blue;
+  }
+  .s2 .d3 .red {
+    color: red;
+  }
+  .red-text {
+    color: red;
+  }
+  .blue-text {
+    color: blue;
+  }
+  .green-text {
+    color: green;
+  }

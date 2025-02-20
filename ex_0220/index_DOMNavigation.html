@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript HTML DOM Navigation</title>
+  </head>
+
+  <style>
+    section {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <!-- 자식 노드 및 노드 값 -->
+    <section class="s1">
+      <h1 id="id01">My First page</h1>
+      <p id="id02"></p>
+
+      <script>
+        document.getElementById("id02").innerHTML =
+          document.getElementById("id01").innerHTML;
+      </script>
+    </section>
+    <section class="s2">
+      <h1 id="id03">My First Page</h1>
+      <p id="id04"></p>
+
+      <script>
+        document.getElementById("id04").innerHTML =
+          document.getElementById("id03").firstChild.nodeValue;
+      </script>
+    </section>
+    <section class="s3">
+      <h1 id="id05">My First Page</h1>
+      <p id="id06"></p>
+
+      <script>
+        document.getElementById("id06").innerHTML =
+          document.getElementById("id05").childNodes[0].nodeValue;
+      </script>
+    </section>
+
+    <!-- DOM 루트 노드 -->
+    <section class="s4">
+      <h2>JavaScript HTMLDOM</h2>
+      <p>Displaying document.body</p>
+
+      <p id="demo"></p>
+      <!-- <script>
+          document.getElementById("demo").innerHTML =
+          document.body.innerHTML;
+      </script> -->
+    </section>
+    <section class="s5">
+      <h2>JavaScript HTMLDOM</h2>
+      <p>Displaying document.documentElement</p>
+
+      <p id="demo2"></p>
+
+      <!-- <script>
+        document.getElementById("demo2").innerHTML =
+          document.documentElement.innerHTML;
+      </script> -->
+    </section>
+
+    <!-- nodeName 속성 -->
+    <section class="s6">
+      <h1 id="id07">My First Page</h1>
+      <p id="id08"></p>
+
+      <script>
+        document.getElementById("id08").innerHTML =
+          document.getElementById("id07").nodeName;
+      </script>
+    </section>
+
+    <!-- nodeType 속성 -->
+    <section class="s7">
+      <h1 id="id09">My First Page</h1>
+      <p id="id10"></p>
+
+      <script>
+        document.getElementById("id10").innerHTML =
+          document.getElementById("id09").nodeType;
+      </script>
+    </section>
+
+    <!-- 새로운 HTML 요소(노드) 생성 -->
+    <section class="s8">
+      <h2>JavaScript HTML DOM</h2>
+      <p>Add a new HTML Element.</p>
+
+      <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+      </div>
+
+      <script>
+        const para = document.createElement("p"); // new <p> 요소 생성
+        const node = document.createTextNode("This is new."); // 생성된 <p>에 들어갈 텍스트 노드
+        para.appendChild(node); // 생성된 <p>에 텍스트 노드 추가
+        const element = document.getElementById("div1"); // 기존 코드 내의 요소 탐색 ex)여기서는 div1
+        element.appendChild(para); // 탐색한 기존 코드 내의 요소에 새로 생성한 요소를 추가 ex)여기서는 new <p>와 텍스트 노드가 div1에 추가
+      </script>
+    </section>
+
+    <!-- 새로운 HTML 요소 생성 -insertBefore() -->
+    <section class="s9">
+      <h2>JavaScript HTML DOM</h2>
+      <p>Add a new HTML Element.</p>
+
+      <div id="div2">
+        <p id="p3">This is a paragraph.</p>
+        <p id="p4">This is another paragraph.</p>
+      </div>
+
+      <script>
+        const para2 = document.createElement("p");
+        const node2 = document.createTextNode("This is new.");
+        para2.appendChild(node2);
+
+        const element2 = document.getElementById("div2");
+        const chiild = document.getElementById("p");
+        element2.insertBefore(para2, chiild);
+      </script>
+    </section>
+
+    <!-- 기존 HTML 요소 제거 -->
+    <section class="s10">
+      <h2>JavaScript HTML DOM</h2>
+      <h3>Remove an HTML Element.</h3>
+
+      <div>
+        <p id="p5">This is a paragraph.</p>
+        <p id="p6">This is another paragraph.</p>
+      </div>
+
+      <button onclick="myFunction()">Remove Element</button>
+      <script>
+        function myFunction() {
+          document.getElementById("p5").remove();
+          // docment.getElementById("$") ->제거 요소 찾으시오.
+          // docment.getElementById.remove() -> 찾은 제거요소의 제거를 실행하시오.
+        }
+      </script>
+    </section>
+
+    <!-- 자식노드 제거 -->
+    <section class="s11">
+      <h2>JavaScript HTML DOM</h2>
+      <p>Remove Child Element</p>
+
+      <div id="s11div1">
+        <p id="s11p1">This is a paragraph.</p>
+        <p id="s11p2">This is another paragraph.</p>
+      </div>
+
+      <script>
+        const parent = document.getElementById("s11div1"); // 부모요소 find
+        const child2 = document.getElementById("s11p1"); // 자식요소 find
+        parent.removeChild(child2); // 부모요소에서 자식요소 제거
+      </script>
+    </section>
+
+    <!-- HTML 요소 교체 -->
+    <section class="s12">
+      <h2>JavaScript HTML DOM</h2>
+      <h3>Replace an HTML Element.</h3>
+
+      <div id="s12div1">
+        <p id="s12p1">This is a paragraph.</p>
+        <p id="s12p2">This is a paragraph.</p>
+      </div>
+
+      <script>
+        const parents12 = document.getElementById("s12div1"); // 기존 doc에서 요소찾기
+        const childs12 = document.getElementById("s12p1"); // 위와 동일
+        const paras12 = document.createElement("p"); // new p 생성
+        const nodes12 = document.createTextNode("This is new."); // new p의 내용 생성
+        paras12.appendChild(nodes12); // new p에 nodes12의 내용 적용
+        parents12.replaceChild(paras12, childs12); // new p와 그 내용을 위에서 찾은 기존 요소와 교체
+      </script>
+    </section>
+
+    <!-- HTML 컬렉션 객체 -->
+    <section class="s13">
+      <h2>JavaScript HTML DOM</h2>
+
+      <p>Hello World!</p>
+
+      <p>Hello Norway!</p>
+
+      <p id="demos13"></p>
+
+      <script>
+        // doc에서 's13' all 요소 find
+        const parents13 = document.getElementsByClassName("s13");
+
+        // find한 s13중 '첫 번째'요소를 s13Element라는 상수로 할당
+        const s13Element = parents13[0];
+        // 할당한 s13Element에서 태그네임 "p"인 요소를 find해 myCollections13라는 상수로 할당
+        const myCollections13 = s13Element.getElementsByTagName("p");
+
+        // doc에서 id="demos13"이라는 요소에 설정해둔 문구와 myCollections13의 두 번째 요소와 함께 출력
+        document.getElementById("demos13").innerHTML =
+          "The innerHTML of the second paragraph is: " +
+          myCollections13[1].innerHTML;
+      </script>
+    </section>
+
+    <!-- HTML 컬렉션 length(반복할 때 유용) -->
+    <section class="s14">
+      <h2>JavaScript HTML DOM</h2>
+
+      <p>Hello World!</p>
+
+      <p>Hello Norway!</p>
+
+      <p id="demos14"></p>
+
+      <script>
+        const parents14 = document.getElementsByClassName("s14");
+        const s14Element = parents14[0];
+        const myCollections14 = s14Element.getElementsByTagName("p");
+
+        document.getElementById("demos14").innerHTML =
+          "This document contains " + myCollections14.length + "paragraphs.";
+      </script>
+    </section>
+    <section class="s15">
+      <h2>JavaScript HTML DOM</h2>
+
+      <p>Hello World!</p>
+
+      <p>Hello Norway!</p>
+
+      <p>Click the button to change the color of all p elements.</p>
+
+      <button onclick="myFunctions15()">Try it</button>
+
+      <script>
+        function myFunctions15() {
+          const parents15 = document.getElementsByClassName("s15");
+          const s15Element = parents15[0];
+          const myCollections15 = s15Element.getElementsByTagName("p");
+          for (let i = 0; i < myCollections15.length; i++) {
+            myCollections15[i].style.color = "red";
+          }
+        }
+      </script>
+    </section>
+
+    <!-- 자바스크립트 HTML DOM 노드 목록 -->
+    <section class="s16">
+      <h2>JavaScript HTML DOM</h2>
+
+      <p>Hello World!</p>
+
+      <p>Hello Norway!</p>
+
+      <p id="demos16"></p>
+
+      <script>
+        // const parents16 = document.getElementsByClassName("s6");
+        // const s16Element = parents16[0];
+        const myNodelists16 = document.querySelectorAll(".s16 p");
+
+        document.getElementById("demos16").innerHTML =
+          "The innerHTML of the second paragraph is: " +
+          myNodelists16[1].innerHTML;
+      </script>
+    </section>
+
+    <!-- HTML DOM 노드 목록 길이 -->
+    <section class="s17">
+      <h2>JavaScript HTML DOM</h2>
+
+      <p>Hellow World!</p>
+
+      <p>Hellow Norway!</p>
+
+      <p id="demos17"></p>
+
+      <script>
+        const myNodelists17 = document.querySelectorAll(".s17 p");
+
+        document.getElementById("demos17").innerHTML =
+          "This document contains " + myNodelists17.length + "paragraphs.";
+      </script>
+    </section>
+    <section class="s18">
+      <h2>JavaScript HTML DOM</h2>
+
+      <p>Hello World!</p>
+
+      <p>Hello Norway!</p>
+
+      <p>Click the button to change the color of all p elements.</p>
+
+      <button onclick="myFunctions18()">Try it</button>
+
+      <script>
+        function myFunctions18() {
+          const myNodelists18 = document.querySelectorAll(".s18 p");
+          // s18의 요소 갯수 미만일 때까지만 i가 증가하며 작동하다가 s18의 요소 갯수보다 i가 커지면 for문 탈출
+          for (let i = 0; i < myNodelists18.length; i++) {
+            myNodelists18[i].style.color = "red";
+          }
+        }
+      </script>
+    </section>
+    <section class="s19"></section>
+    <section class="s20"></section>
+    <section class="s21"></section>
+    <section class="s22"></section>
+    <section class="s23"></section>
+    <section class="s24"></section>
+    <section class="s25"></section>
+    <section class="s26"></section>
+    <section class="s27"></section>
+    <section class="s28"></section>
+    <section class="s29"></section>
+    <section class="s30"></section>
+  </body>
+</html>
