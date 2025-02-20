@@ -118,12 +118,64 @@ if (s5Element) {
 // p90
 const s6 = document.querySelectorAll(".s6 div");
 const s6Element = s6[0];
-if(s6Element){
-  for(let i =1; i <= 10; i++){
-    if(i == 6) break;
-    s6Element.innerHTML += `${i} <br>`;
+if (s6Element) {
+  for (let i = 1; i <= 10; i++) {
+    if (i == 6) break;
+    s6Element.innerHTML += `<p>${i}</p><br>`;
   }
-  s6Element.innerHTML += `======The End======`
+  s6Element.innerHTML += `<p>======The End======</p>`;
+}
+
+// p91
+const s7 = document.querySelectorAll(".s7 div");
+const s7Element = s7[0];
+if (s7Element) {
+  for (let i = 1; i <= 10; i++) {
+    if (i % 2 == 0) continue;
+    s7Element.innerHTML += `<p>${i}</p><br>`;
+  }
+  s7Element.innerHTML += `<p>======The End======</p>`;
+}
+
+// p92
+const s8 = document.querySelectorAll(".s8 div");
+const s8Element = s8[0];
+if (s8Element) {
+  for (let i = 1; i <= 3; i++) {
+    for (let k = 1; k <= 2; k++) {
+      s8Element.innerHTML += `<p>${i}행 ${k}열</p><br>`;
+    }
+    s8Element.innerHTML += `<br>`;
+  }
+}
+
+// Quiz 1
+const s9 = document.querySelectorAll(".s9 div");
+const s9Element = s9[0];
+if (s9Element) {
+  let i = 1;
+  while (i <= 9) {
+    s9Element.innerHTML += `<p>5 x ${i} = ${5 * i}</p><br>`;
+    i++;
+  }
+}
+
+// Quiz 2
+const s10 = document.querySelectorAll(".s10 div");
+const s10Element = s10[0];
+if(s10Element) {
+  let num = 1;
+  let t = "<table border = 1>";
+  for (let i = 1; i <= 5; i++) {
+    t += "<tr>";
+    for(let k = 1; k <= 5; k++) {
+      t += "<td>" + num + "</td>";
+      num++;
+    }
+    t += "</tr>";
+  }
+  t += "</table>";
+  s10Element.innerHTML = `${t}`;
 }
 // 3~5단 이중 for문
 const s13 = document.getElementsByClassName("s13");
