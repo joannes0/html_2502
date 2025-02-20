@@ -165,17 +165,17 @@ const s10 = document.querySelectorAll(".s10 div");
 const s10Element = s10[0];
 if(s10Element) {
   let num = 1;
-  let t = "<table border = 1>";
-  for (let i = 1; i <= 5; i++) {
+  let t = "<table border = 1>"; // <table> 생성
+  for (let i = 1; i <= 5; i++) { // <tr>총 5번 생성
     t += "<tr>";
-    for(let k = 1; k <= 5; k++) {
+    for(let k = 1; k <= 5; k++) { // <tr> 1번 생성 당 <td>5번 생성
       t += "<td>" + num + "</td>";
       num++;
     }
-    t += "</tr>";
+    t += "</tr>"; // </tr> 생성  
   }
-  t += "</table>";
-  s10Element.innerHTML = `${t}`;
+  t += "</table>"; // </table> 닫아주기
+  s10Element.innerHTML = `<p>${t}</p>`; //<table> ''' </table> 값 div에 넣기
 }
 // 3~5단 이중 for문
 const s13 = document.getElementsByClassName("s13");
