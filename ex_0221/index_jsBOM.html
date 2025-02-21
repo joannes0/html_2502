@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 JavaScript BOM</title>
+
+    <style>
+        body {
+            background-color: antiquewhite;
+            margin: 20px;
+            padding: 20px;
+            font-size: 30;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid brown;
+            border-radius: 15px;
+            background-color: bisque;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 창 위치 Href ------------------------------------------------------>
+    <section class="s1">
+      <h2>자바스크립트</h2>
+      <h3>윈도우 위치 객체</h3>
+      <p id="demo"></p>
+      <script>
+        document.getElementById("demo").innerHTML =
+          "the full URL of this page is:<br>" + window.location.href;
+      </script>
+    </section>
+
+    <!-- 창 위치 호스트 이름------------------------------------------ -->
+    <section class="s2">
+      <p id="demo2"></p>
+      <script>
+        document.getElementById("demo2").innerHTML =
+          "page hostname is: " + window.location.hostname;
+      </script>
+    </section>
+    <!-- 창 위치 경로 이름-------------------------------- -->
+    <section class="s3">
+      <p id="demo3"></p>
+      <script>
+        document.getElementById("demo3").innerHTML =
+          "page path is: " + window.location.pathname;
+      </script>
+    </section>
+
+    <!-- 창위치 프로토콜--------------------------------- ------------------>
+    <section class="s4">
+      <p id="demo4"></p>
+      <script>
+        document.getElementById("demo4").innerHTML =
+          "the page protocol is: " + window.location.protocol;
+      </script>
+    </section>
+
+    <!-- 창 위치 포트 ------------------------------------------------------>
+    <section class="s5">
+      <p id="demo5"></p>
+      <p>
+        <b>참고</b>포트 번호가 기본값(http의 경우 80, https의 경우 443)인 경우
+        대부분의 브라우저는 0 또는 아무것도 표시하지 않습니다.
+      </p>
+      <script>
+        document.getElementById("demo5").innerHTML =
+          "the URL port number of the current page is: " + window.location.port;
+      </script>
+    </section>
+
+    <!-- 창 위치 지정 ---------------------------------------------------->
+    <section class="s6">
+      <input type="button" value="Load new document" onclick="newDoc()" />
+      <script>
+        function newDoc() {
+          window.location.assign("https://www.w3schools.com");
+        }
+      </script>
+    </section>
+
+    <!-- 창 기록 뒤로 -------------------------------------------------------->
+    <section class="s7">
+      <input type="button" value="Back" onclick="goBack()" />
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    </section>
+
+    <!-- 창 기록 앞으로 ----------------------------------------------------->
+    <section class="s8">
+      <input type="button" value="Forward" onclick="goForward()" />
+      <script>
+        function goForward() {
+          window.history.forward();
+        }
+      </script>
+    </section>
+
+    <!-- 브라우저 쿠키 -------------------------------------------->
+    <section class="s9">
+      <p>cookieEnabled 속성은 쿠키가 활성화되어 있는 경우 true를 반환합니다.</p>
+      <p id="demo6"></p>
+      <script>
+        document.getElementById("demo6").innerHTML =
+          "navigator.cookieEnabled is: " + navigator.cookieEnabled;
+      </script>
+    </section>
+
+    <!-- 브라우저 애플리케이션 이름 -------------------------------- -->
+    <section class="s10">
+      <p>appName 속성은 브라우저의 애플리케이션 이름을 반환합니다.</p>
+      <p id="demo7"></p>
+      <p>
+        이상하게도 "Netscape"는 IE11, Chrome, Firefox, Fafari의 애플리케이션
+        이름입니다.
+      </p>
+      <script>
+        document.getElementById("demo7").innerHTML =
+          "navogator.appName is: " + navigator.appName;
+      </script>
+    </section>
+
+    <!-- 브라우저 응용 프로그램 코드 이름 --------------------------------- -->
+    <section class="s11">
+      <p>appCodeName 속성은 브라우저의 코드 이름을 반환합니다.</p>
+      <p>
+        "Mozilla"는 chrome, firefox, ie, safari, opera의 애플리케이션 코드명임
+      </p>
+      <p id="demo8"></p>
+      <script>
+        document.getElementById("demo8").innerHTML =
+          "navigator.appCodeName is: " + navigator.appCodeName;
+      </script>
+    </section>
+
+    <!-- 브라우저 엔진------------------------------------------------- -->
+    <section class="s12">
+      <p>product 속성은 브라우저의 제품 이름을 반환합니다.</p>
+      <p>대부분 부라우저는 제품 이름으로 "Gecko"를 반환합니다.</p>
+      <p id="demo9"></p>
+      <script>
+        document.getElementById("demo9").innerHTML =
+          "navigator.product is: " + navigator.product;
+      </script>
+    </section>
+
+    <!-- 브라우저 버전 ------------------------------------------- -->
+    <section class="s13">
+      <p id="demo10"></p>
+      <script>
+        document.getElementById("demo10").innerHTML = navigator.appVersion;
+      </script>
+    </section>
+
+    <!-- 브라우저 에이전트----------------------------------------- -->
+    <section class="s14">
+      <p id="demo11"></p>
+      <script>
+        document.getElementById("demo11").innerHTML = navigator.userAgent;
+      </script>
+    </section>
+
+    <!-- 브라우저 플랫폼----------------------------------------- -->
+    <section class="s15">
+      <p id="demo12"></p>
+      <script>
+        document.getElementById("demo12").innerHTML =
+          "navigator.platform is: " + navigator.platform;
+      </script>
+    </section>
+
+    <!-- 브라우저 언어 ---------------------------------------------- -->
+    <section class="s16">
+      <p id="demo13"></p>
+      <script>
+        document.getElementById("demo13").innerHTML =
+          "navigator.language is: " + navigator.language;
+      </script>
+    </section>
+
+    <!-- 브라우저 온라인 상태인지 여부 -------------------------------------->
+    <section class="s17">
+      <p>브라우저가 온라인인 경우 true를 반환</p>
+      <p id="demo14"></p>
+      <script>
+        document.getElementById("demo14").innerHTML =
+          "navigator.online is: " + navigator.onLine;
+      </script>
+    </section>
+
+    <!-- Java가 활성화 되어 있는지 확인 ------------------------------------- -->
+    <section class="s18">
+      <p>javaEnable()메서드는 Java가 활성화 되어있으면 true를 반환</p>
+      <p id="demo15"></p>
+      <script>
+        document.getElementById("demo15").innerHTML =
+          "javaEnabled is " + navigator.javaEnabled();
+      </script>
+    </section>
+
+    <!-- 팝업------------------------------------------------------------------ -->
+    <!-- 알림상자--------------------------------------------------------- -->
+    <section class="s19">
+      <p>알림 상자</p>
+      <button onclick="myFunction()">try it</button>
+      <script>
+        function myFunction() {
+          alert("I am an alert box!");
+        }
+      </script>
+    </section>
+
+    <!-- 확인 상자 -------------------------------------------------------------- -->
+    <section class="s20">
+      <p>확인 상자</p>
+      <button onclick="myFunction2()">try it</button>
+      <p id="p1"></p>
+      <script>
+        function myFunction2() {
+          let txt;
+          if (confirm("press a button!")) {
+            tex = "you pressed OK!";
+          } else {
+            txt = "you pressed Cancel!";
+          }
+          document.getElementById(p1).innerHTML = txt;
+        }
+      </script>
+    </section>
+
+    <!-- 프롬프트 상자 ------------------------------------------------------------->
+    <section class="s21">
+      <p>프롬프트 상자</p>
+      <button onclick="myFunction3()">try it</button>
+      <p id="p2"></p>
+      <script>
+        function myFunction3() {
+          let text;
+          let person = prompt("Please enter your name: ", "Harry Potter");
+          if (person == null || person == "") {
+            text = "User cancelled the prompt.";
+          } else {
+            text = "Hello " + person + "! How are you today?";
+          }
+          document.getElementById("p2").innerHTML = text;
+        }
+      </script>
+    </section>
+
+    <!-- 줄 바꿈 -----------------------------------------------------------------  -->
+    <section class="s22">
+      <p>줄 바꿈</p>
+      <button onclick="alert('Hello\nHow ate you?')">try it</button>
+    </section>
+
+    <!-- 자바스크립트 타이밍 이벤트 ---------------------------------------------------- -->
+    <!-- setTimeout() 메서드 -->
+    <section class="s23">
+      <p>클릭하면 3초 후 hello 알림 표시</p>
+      <button onclick="setTimeout(myFunction4, 3000);">try it</button>
+      <!-- (blabla...<-실행 할 함수, 3000 <-실행 전 밀리초) -->
+      <script>
+        function myFunction4() {
+          alert("hello");
+        }
+      </script>
+    </section>
+
+    <!-- clearTimeout() 메서드 = setTimeout()에 지정된 함수 실행 중시 ------------------------>
+    <section class="s24">
+      <p>실행 버튼, 중지 버튼</p>
+      <button onclick="myVar = setTimeout(myFunction5, 3000)">try it</button>
+      <button onclick="clearTimeout(myVar)">stop it</button>
+      <script>
+        function myFunction5() {
+          alert("hello");
+        }
+      </script>
+    </section>
+
+    <!-- setInterval() 메서드 -------------------------------------------------------->
+    <section class="s25">
+      <p>이 페이지 스크립트는 시계 시작</p>
+      <p id="ps25"></p>
+      <script>
+        setInterval(myTimer, 100);
+        function myTimer() {
+          const ds25 = new Date();
+          document.getElementById("ps25").innerHTML = ds25.toLocaleTimeString();
+        }
+      </script>
+    </section>
+
+    <!-- clearInterval() = setInterval() 실행 중시함------------------------------------>
+    <section class="s26">
+        <p>이 페이지 스크립트는 시계 시작, 스톱 버튼으로 시계 멈춤</p>
+        <p id="ps26"></p>
+        <button onclick="clearInterval(myVar2)">stop time</button>
+        <script>
+            let myVar2 = setInterval(myTimer, 1000);
+            function myTimer() {
+                const ds26 = new Date();
+                document.getElementById('ps26').innerHTML = ds26.toLocaleTimeString();
+            }
+        </script>
+    </section>
+
+    <!-- 자바스크립트 쿠키 -------------------------------------------------------------->
+    <section class="s27"></section>
+    <section class="s28"></section>
+    <section class="s29"></section>
+    <section class="s31"></section>
+    <section class="s32"></section>
+    <section class="s33"></section>
+    <section class="s34"></section>
+    <section class="s35"></section>
+    <section class="s36"></section>
+    <section class="s37"></section>
+    <section class="s38"></section>
+    <section class="s39"></section>
+  </body>
+</html>
