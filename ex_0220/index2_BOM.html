@@ -4,8 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>W3 BOM</title>
+
+    <style>
+      section {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid coral;
+        font-family: 돋움;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
+    <!-- 창크기 --------------------------------------------->
+    <section class="s1">
+      <h1>윈도우</h1>
+      <p id="demo"></p>
+      <script>
+        document.getElementById("demo").innerHTML =
+          "브라우저 내부 창 너비: " +
+          window.innerWidth +
+          "px<br>" +
+          "브라우저 내부 창 높이: " +
+          window.innerHeight +
+          "px";
+      </script>
+    </section>
+    <!-- 윈도우 스크린 폭--------------------------------------- -->
+    <section class="s2">
+      <p id="demo2"></p>
 
+      <script>
+        document.getElementById("demo2").innerHTML =
+          "스크린 너비는 " + screen.width;
+      </script>
+    </section>
+
+    <!-- 윈도우 스크린 높이 ----------------------------------------->
+    <section class="s3">
+      <p id="demo3"></p>
+
+      <script>
+        document.getElementById("demo3").innerHTML =
+          "스크린 높이는 " + screen.height;
+      </script>
+    </section>
+
+    <!-- 윈도우 스크린 사용가능 너비----------------------------------- -->
+    <section class="s4">
+      <p id="demo4"></p>
+      <script>
+        document.getElementById("demo4").innerHTML =
+          "사용 가능한 화면 너비는 " + screen.availWidth;
+      </script>
+    </section>
+    <!-- 윈도우 스크린 사용가능 높이------------------------------ -->
+    <section class="s5">
+      <p id="demo5"></p>
+      <script>
+        document.getElementById("demo5").innerHTML =
+          "사용 가능한 화면 높이 " + screen.availHeight;
+      </script>
+    </section>
+
+    <!-- 윈도우 색상 딥스-------------------------------------- -->
+    <section class="s6">
+      <p id="demo6"></p>
+      <script>
+        document.getElementById("demo6").innerHTML =
+          "스크린 색상 딥스는 " + screen.colorDepth;
+      </script>
+    </section>
+
+    <!-- 윈도우 픽셀 딥스------------------------------------------- -->
+    <section class="s7">
+      <p id="demo7"></p>
+      <script>
+        document.getElementById("demo7").innerHTML =
+          "스크린 픽셀 딥스는: " + screen.pixelDepth;
+      </script>
+    </section>
   </body>
 </html>
