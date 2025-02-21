@@ -1,0 +1,12 @@
+body {
+    margin: 20px;
+    padding: 20px;
+    background-color: lightgray;
+}
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 3em;
+    background-color: lightblue;
+}
