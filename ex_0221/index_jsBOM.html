@@ -6,23 +6,23 @@
     <title>W3 JavaScript BOM</title>
 
     <style>
-        body {
-            background-color: antiquewhite;
-            margin: 20px;
-            padding: 20px;
-            font-size: 30;
-            font-weight: bold;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid brown;
-            border-radius: 15px;
-            background-color: bisque;
-        }
+      body {
+        background-color: antiquewhite;
+        margin: 20px;
+        padding: 20px;
+        font-size: 30;
+        font-weight: bold;
+      }
+      section {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid brown;
+        border-radius: 15px;
+        background-color: bisque;
+      }
     </style>
   </head>
-  <body>
+  <body onload="checkCookie()">
     <!-- 창 위치 Href ------------------------------------------------------>
     <section class="s1">
       <h2>자바스크립트</h2>
@@ -300,30 +300,56 @@
 
     <!-- clearInterval() = setInterval() 실행 중시함------------------------------------>
     <section class="s26">
-        <p>이 페이지 스크립트는 시계 시작, 스톱 버튼으로 시계 멈춤</p>
-        <p id="ps26"></p>
-        <button onclick="clearInterval(myVar2)">stop time</button>
-        <script>
-            let myVar2 = setInterval(myTimer, 1000);
-            function myTimer() {
-                const ds26 = new Date();
-                document.getElementById('ps26').innerHTML = ds26.toLocaleTimeString();
-            }
-        </script>
+      <p>이 페이지 스크립트는 시계 시작, 스톱 버튼으로 시계 멈춤</p>
+      <p id="ps26"></p>
+      <button onclick="clearInterval(myVar2)">stop time</button>
+      <script>
+        let myVar2 = setInterval(myTimer, 1000);
+        function myTimer() {
+          const ds26 = new Date();
+          document.getElementById("ps26").innerHTML = ds26.toLocaleTimeString();
+        }
+      </script>
     </section>
 
     <!-- 자바스크립트 쿠키 -------------------------------------------------------------->
-    <section class="s27"></section>
-    <section class="s28"></section>
-    <section class="s29"></section>
-    <section class="s31"></section>
-    <section class="s32"></section>
-    <section class="s33"></section>
-    <section class="s34"></section>
-    <section class="s35"></section>
-    <section class="s36"></section>
-    <section class="s37"></section>
-    <section class="s38"></section>
-    <section class="s39"></section>
+    <section class="s27">
+      <script>
+        function setCookie(cname, cvalue, exdays) {
+          const d = new Date();
+          d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+          let expires = "expires=" + d.toUTCString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+          let name = cname + "=";
+          let decodedCookie = decodeURIComponent(document.cookie);
+          let ca = decodedCookie.split(";");
+          for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == " ") {
+              c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+            }
+          }
+          return "";
+        }
+
+        function checkCookie() {
+          let user = getCookie("username");
+          if (user != "") {
+            alert("Welcome again " + user);
+          } else {
+            user = prompt("Please enter your name:", "");
+            if (user != "" && user != null) {
+              setCookie("username", user, 30);
+            }
+          }
+        }
+      </script>
+    </section>
   </body>
 </html>
