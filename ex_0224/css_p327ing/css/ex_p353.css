@@ -1,0 +1,74 @@
+/* p353 --------------------------------------------------------------- */
+.s1 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+  text-align: center;
+}
+.s1 div {
+  padding: 20px;
+  width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.s1 .multi {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  -webkit-column-rule: 2px dotted #000;
+  -moz-column-rule: 2px dotted #000;
+  column-rule: 2px dotted #000;
+  text-align: justify;
+}
+
+/* p354 --------------------------------------------------------------- */
+.s2 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+  padding: 20px;
+  width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.s2 .multi {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-rule: 2px dotted #000;
+  -moz-column-rule: 2px dotted #000;
+  column-rule: 2px dotted #000;
+  text-align: justify;
+}
+.s2 .multi h3 {
+  break-before: column; /* 원하는 위치에서 단 나누기 */
+}
+
+/* p355 ----------------------------------------------------------------- */
+.s3 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+  padding: 20px;
+  width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.s3 .multi {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-rule: 2px dotted #000;
+    -moz-column-rule: 2px dotted #000;
+    column-rule: 2px dotted #000;
+    text-align: justify;
+}
+.s3 .no-col {
+    background: #f0f0f0;
+    margin: 10px 3px;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+}
