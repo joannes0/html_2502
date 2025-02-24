@@ -1,0 +1,26 @@
+body {
+    margin: 10px;
+    padding: 10px;
+}
+section {
+    margin: 10px;
+    padding: 10px;
+}
+/* p349 ----------------------------------------------------------- */
+/* .s1 {
+    font-family: "맑은 고딕", "고딕", "굴림";
+}
+.s1 .multi {
+    -webkit-column-width: 120px;
+    -moz-column-width: 120px;
+    column-width: 120px;
+} */
+/* p351 (p349와 이어서)---------------------------------------------------------*/
+.s1 {
+    font-family: "맑은 고딕", "고딕", "굴림";
+}
+.s1 .multi {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}

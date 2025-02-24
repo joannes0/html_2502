@@ -1,0 +1,84 @@
+/* section div {
+  width: 100px;
+
+} */
+/* p329 -------------------------------------------------------------------------------------------------*/
+.s1 .box1 {
+  box-sizing: content-box;
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  padding: 30px;
+  border: 2px solid red;
+}
+.s1 .box2 {
+  box-sizing: border-box;
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  padding: 30px;
+  border: 2px solid red;
+}
+
+/* p331 --------------------------------------------------------------------------------------------------- */
+.s2 .d1 {
+  width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.s2 .left-img {
+  float: left;
+  margin-right: 25px;
+}
+.s2 .d1 p {
+  line-height: 30px;
+}
+
+/* p332------------------------------------------------------------------------------------------------ */
+.s3 {
+    overflow: hidden;
+}
+.s3 .d1 {
+  padding: 20px;
+  margin-right: 10px;
+  background: #ffd800;
+  float: left;
+}
+.s3 .d2 {
+  background: #0094ff;
+  padding: 20px;
+  margin-right: 10px;
+  float: left;
+}
+.s3 .d3 {
+  background: #00ff21;
+  padding: 20px;
+  float: left;
+}
+.s3 .d4 {
+  background: #ffffff;
+  padding: 20px;
+  float: right;
+  border: 1px solid black;
+}
+
+/* p333 --------------------------------------------------------------------------------------------*/
+.s4 div {
+  padding: 20px;
+  margin: 10px;
+}
+.s4 .d1 {
+  background: #ffd800;
+  float: left;
+}
+.s4 .d2 {
+  background: #0094ff;
+  float: left;
+}
+.s4 .d3 {
+  background: #00ff21;
+}
+.s4 .d4 {
+  background: #a874ff;
+  clear: both;
+}
