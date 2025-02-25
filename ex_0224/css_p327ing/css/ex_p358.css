@@ -1,0 +1,189 @@
+section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+}
+/* p358 ------------------------------------------------------- */
+.s1 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+.s1 .table1 {
+  border: 1px solid black;
+}
+.s1 .table1 td {
+  border: 1px dotted black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* p359 --------------------------------------------------------- */
+.s2 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+.s2 .table1 {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.s2 .table1 td {
+  border: 1px dashed black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* p360 -------------------------------------------------------- */
+.s3 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+.s3 table {
+  margin-bottom: 50px;
+}
+.s3 .table1 {
+  border: 1px solid black;
+  border-collapse: separate;
+  border-spacing: 20px 10px;
+}
+.s3 .table2 {
+  border-collapse: separate;
+  border-spacing: 20px 10px;
+}
+.s3 td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* p361 -------------------------------------------------------- */
+.s4 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+.S1 .schedule {
+  border-collapse: separate;
+  margin: 20px;
+}
+.s4 td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+.s4 .tb1 td {
+  empty-cells: show;
+}
+.s4 .tb2 td {
+  empty-cells: hide;
+}
+
+/* p362 ------------------------------------------------------------- */
+.s5 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+.s5 table {
+  border-collapse: collapse;
+  width: 300px;
+}
+.s5 td {
+  padding: 10px;
+}
+
+/* p363 ------------------------------------------------------------- */
+.s6 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+.s6 table,
+.s6 td {
+  border: 1px solid #ccc;
+}
+.s6 table {
+  width: 300px;
+  table-layout: fixed;
+}
+.s6 td {
+  width: 150px;
+}
+
+/* p364 ------------------------------------------------------------ */
+.s7 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+}
+.s7 table,
+.s7 td {
+  border: 1px solid #ccc;
+}
+.s7 .table1 {
+  border-collapse: collapse;
+  width: 300px;
+  table-layout: fixed;
+  word-break: break-all;
+  height: auto;
+}
+.s7 .table1 td {
+  width: 150px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+/* p366 ------------------------------------------------------ */
+.s8 table,
+.s8 td {
+  border: 1px solid #ccc;
+}
+.s8 td {
+  height: 100px;
+  padding: 20px;
+}
+.s8 .va1 {
+  vertical-align: top;
+}
+.s8 .va2 {
+  vertical-align: bottom;
+}
+.s8 .va3 {
+  vertical-align: middle;
+}
+
+/* quiz 1 ------------------------------------------------------- */
+.s9 {
+  font-family: "맑은 고딕", "고딕", "굴림";
+  clear: both;
+}
+#content {
+  border: none;
+}
+.s9 a:link {
+  text-decoration: none;
+}
+.s9 nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.s9 nav ul li {
+  float: left;
+  font-size: 1.5em;
+  padding-left: 7px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  border-left-width: 5px;
+  border-left-color: #990066;
+  border-left-style: solid;
+}
+.s9 article {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border-top: 1px #a6a6a6 dashed;
+  border-bottom: 1px #a6a6a6 dashed;
+}
+
+/* QUIZ 2 ------------------------------------------------------------- */
+.s10 table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  caption-side: bottom;
+}
+.s10 td,
+.s10 th {
+  border: 1px solid black;
+  padding: 10px;
+}
+.s10 .heading {
+  background: #eee;
+}
