@@ -1,4 +1,4 @@
-const element = {
+const elements = {
   s1: {
     btn: document.querySelector(".s1 .myBtn"),
     demo: document.querySelector(".s1 .demo"),
@@ -30,7 +30,24 @@ const element = {
     myP2: document.querySelector(".s8 .myP2"),
   },
   s9: {
-    myDiv: document.querySelector(".s9 myDiv"),
+    myDiv: document.querySelector(".s9 .myDiv"),
     demo: document.querySelector(".s9 .demo"),
   },
 };
+
+// s1: 날짜 표시
+if(elements.s1.btn) {
+    elements.s1.btn.addEventListener('click', () => {
+        elements.s1.demo.innerHTML = Date();
+    });
+}
+
+// s2: 인사말 알림
+if(elements.s2.btn) {
+    elements.s2.btn.addEventListener('click', () => alert('Hello world!!!!!!'));
+}
+
+// s3: 다른 인사말 알림
+if(elements.s3.btn) {
+    elements.s2.btn.addEventListener('click', () => alert('Hello World@@@@@@'));
+}
