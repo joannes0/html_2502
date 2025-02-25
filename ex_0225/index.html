@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자바스크립트 HTML DOM 이벤트 리스너</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- addEventListener() ------------------------------------------------ -->
+    <section class="s1">
+      <p>
+        addEventListener()메서드 지정된 요소에 핸들러 연결, 기존 핸들러 덮어쓰기
+        없이 이벤트 핸들러를 요소에 연결, 하나의 요소에 여러 개의 이벤트 핸들러
+        추가 가능, 동일한 유형을 하나의 요소에 여러 개 추가도 가능.
+      </p>
+      <button class="myBtn">요일, 월, 일, 년, 시간 표시</button>
+      <p class="demo"></p>
+    </section>
+    <!-- element.addEventListener() ----------------------------------------------->
+    <section class="s2">
+      <button class="myBtn">누르면 alert 문구 등장</button>
+      <p class="demo"></p>
+    </section>
+    <section class="s3">
+      <button class="myBtn">외부 명명된 함수로 alert 문구 적용하기</button>
+    </section>
+    <!-- 동일한 요소에 여러 이벤트 핸들러 추가 --------------------------------------->
+    <section class="s4">
+      <button class="myBtn">누르면 alert 문구 순차적으로 2개 등장</button>
+    </section>
+    <section class="s5">
+      <button class="myBtn">동일한 요소에 여러가지 이벤트 적용</button>
+      <p class="demo"></p>
+    </section>
+    <!-- 창 객체에 이벤트 핸들러 추가 ----------------------------------------------- -->
+    <section class="s6">
+      <p>창 크기 수치 표시</p>
+      <p class="demo"></p>
+    </section>
+    <!-- 매개변수 전달 ------------------------------------------------------------ -->
+    <section class="s7">
+      <p>
+        매개 변수 값을 전달할 때 매개변수를 사용하겨 지정된 함수를 호출하는
+        "익명 함수"를 사용함
+      </p>
+      <button class="myBtn">버튼을 누르면 계산함</button>
+      <p class="demo"></p>
+    </section>
+    <!-- 이벤트 버블링 또는 이벤트 캡처링 ----------------------------------------- -->
+    <section class="s8">
+      <p>버블링: 안쪽 이벤트 먼저 처리 후 바깥쪽 이벤트 처리</p>
+      <br />
+      <p>캡처링: 바깥쪽 이벤트 먼저 처리 후 안쪽 이벤트 처리</p>
+      <div class="myDiv1">
+        <h2>버블링(Bubbling):</h2>
+        <p class="myP1">클릭하세요</p>
+      </div>
+      <br />
+      <div class="myDiv2">
+        <h2>캡처링(Capturing):</h2>
+        <p class="myP2">클릭하세요</p>
+      </div>
+    </section>
+    <!-- removeEventListener()메서드: addEeventListener()메서드로 연결된 이벤트 핸들러 제거 -->
+    <section class="s9">
+      <div class="myDiv">
+        <p>
+          이 div 요소에는 주황색 필드 안에서 마우스를 움직일 떄마다 무작위
+          숫자를 표시하는 onmousemove이벤트 핸들러가 들어있음.
+        </p>
+        <p>버튼을 클릭하면 div의 이벤트 핸들러가 제거됨.</p>
+        <button class="myBtn" onclick="removeHandler()">제거하기</button>
+      </div>
+      <p class="demo"></p>
+    </section>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
