@@ -1,21 +1,14 @@
 const elements = {
-  s1: { section: document.querySelector(".s1") },
+  s2: { sec: document.querySelector(".s2") },
 };
 
-// p137
-let popup; // 팝업 창 저장할 변수
-
+// winpopup.html과 연결되면 이미지도 뜸뜸
 function openPopup() {
-  if (elements.s1.section) {
-    popup = window.open(
+  if (elements.s2.sec) {
+    window.open(
       "winpopup.html",
       "pop1",
-      "width = 300, height = 400, left = 300, top = 50"
+      "width=300, height=400, left=300, top=50"
     );
   }
-}
-function closePopup() {
-    if(popup && !popup.closed) {
-        popup.close();
-    }
 }

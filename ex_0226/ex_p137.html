@@ -18,22 +18,19 @@
         <map name="intro" id="intro">
           <area
             shape="rect"
-            coords="180, 346, 230, 368"
-            href="#"
-            alt="창 열기"
-            onclick="openPopup()"
-          />
-          <area
-            shape="rect"
             coords="230, 368, 280, 390"
             href="#"
             alt="창 닫기"
-            onclick="closePopup()"
+            onclick="window.close()"
           />
         </map>
       </p>
     </section>
-    <section class="s2"></section>
+    <!-- 팝업창 -->
+    <section class="s2">
+      <h1>이지스 퍼블리싱</h1>
+      <button onclick="openPopup()">팝업 열기</button>
+    </section>
     <section class="s3"></section>
     <section class="s4"></section>
     <section class="s5"></section>
