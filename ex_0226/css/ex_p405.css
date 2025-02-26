@@ -1,0 +1,55 @@
+/* p405 */
+.s1 {
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+/* p410 */
+.s2 {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+/* p416 */
+#container {
+  position: relative;
+  text-align: center;
+  margin-top: 30%;
+  margin-left: 30%;
+}
+.s3 h2 {
+  font-size: 2em;
+}
+.s3 h1 {
+  font-size: 3.5em;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #222;
+}
+a:hover {
+  cursor: pointer;
+}
+#bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+  background: url(../images/flame.jpg) left top no-repeat;
+  background-size: cover;
+}
+.s4 {
+  width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+}
+.s5 {
+  width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+}
