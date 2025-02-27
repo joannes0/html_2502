@@ -118,5 +118,5 @@ if (section7Div) {
   const menu = ['짜장면', '돈까스', '된장국', '김치찌개', '회덮밥'];
   const menuNum = Math.floor( Math.random() * menu.length);
   const result = menu[menuNum];
-  createAndAppendP(section7DIv, result);
+  createAndAppendP(section7Div, result);
 }
