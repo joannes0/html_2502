@@ -4,6 +4,7 @@ const elements = {
   section_4: { div: document.querySelector(".s4 div") },
   section_5: { div: document.querySelector(".s5 div") },
   section_6: { div: document.querySelector(".s6 div") },
+  section_7: { div: document.querySelector(".s7 div") },
 };
 
 // <p>태그 생성 함수. 단, 적용부 const div = ...로 선언해야함
@@ -72,16 +73,16 @@ updateDisplay2("section_4");
 const section5Div = elements.section_5.div;
 if (section5Div) {
   const info = navigator.userAgent.toLowerCase();
-  let osTmg = null;
+  let osImg = null;
 
   if (info.indexOf("windows") >= 0) {
-    osTmg = "windows.png";
+    osImg = "windows.png";
   } else if (info.indexOf("macintosh") >= 0) {
-    osTmg = "macintosh.png";
+    osImg = "macintosh.png";
   } else if (info.indexOf("iphone") >= 0) {
-    osTmg = "iphone.png";
+    osImg = "iphone.png";
   } else if (info.indexOf("android") >= 0) {
-    osTmg = "android.png";
+    osImg = "android.png";
   }
   // os 이미지 추가
   if (osTmg) {
@@ -95,4 +96,27 @@ if (section5Div) {
 
   createAndAppendP(section5Div, "모니터 해상도 너비: " + screenWidth + "px");
   createAndAppendP(section5Div, "모니터 해상도 높이: " + screenHeight + "px");
+}
+
+const section6Div = elements.section_6.div;
+if (section6Div) {
+  // 전화번호 처리
+  const phoneNum = "010-2345-1234";
+  const visiblePart = phoneNum.substring(0, phoneNum.length - 4);
+  const hiddenPart = phoneNum.substring(phoneNum.length - 4);
+  const maskedPhone = visiblePart + hiddenPart.replace(/\d/g, "*");
+  createAndAppendP(section6Div, maskedPhone);
+
+  // 이미지 경로 처리
+  const imgSrc = "images/bnt_out.jpg";
+  const result_2 = imgSrc.replace("out.jpg", "over.jpg");
+  createAndAppendP(section6Div, result_2);
+}
+
+const section7Div = elements.section_7.div;
+if (section7Div) {
+  const menu = ['짜장면', '돈까스', '된장국', '김치찌개', '회덮밥'];
+  const menuNum = Math.floor( Math.random() * menu.length);
+  const result = menu[menuNum];
+  createAndAppendP(section7DIv, result);
 }
