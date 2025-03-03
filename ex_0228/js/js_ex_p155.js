@@ -9,21 +9,22 @@ const elements = {
   section_8: { div: document.querySelector(".section_8 div") },
   section_9: { div: document.querySelector(".section_9 div") },
   section_10: { div: document.querySelector(".section_10 div") },
+  section_11: { div: document.querySelector(".section_11 div") },
 };
 // 변수 선언 반복 함수
 function getSectionDivNum(sectionNumber) {
-    const sectionKey = `section_${sectionNumber}`;
-    return elements[sectionKey].div;
+  const sectionKey = `section_${sectionNumber}`;
+  return elements[sectionKey].div;
 }
 // create paragraph (문단요소 만들기 함수)
 function addParagraphToDiv(div, message) {
-    div.innerHTML +=`<p>${message}</p>`;
+  div.innerHTML += `<p>${message}</p>`;
 }
 // div check 함수
 function updateDivIfExists(div, action) {
-    if (div) {
-        action(div);
-    }
+  if (div) {
+    action(div);
+  }
 }
 // p155
 let count = 0;
@@ -109,7 +110,7 @@ if (section5Div) {
     let avg = sum / arrData.length;
     return avg;
   }
-// 버튼 클릭시 실행
+  // 버튼 클릭시 실행
   function pointButton() {
     let arrSubject = ["국어", "수학"];
     let result = testAvg(arrSubject);
@@ -120,47 +121,153 @@ if (section5Div) {
 // p163
 const section6Div = elements.section_6.div;
 if (section6Div) {
-    let num = 1;
-    function gallery(direct) {
-        if (direct) {
-            if (num == 8) return;
-            num++;
-        } else {
-            if (num == 1) return;
-            num--;
-        }
-        section6Div.innerHTML = `<p><img class="poto"></p>`
-        let section6DivPoto = section6Div.querySelector('.poto')
-        section6DivPoto.setAttribute('src', './images/pic_' + num + '.jpg');
+  let num = 1;
+  function gallery(direct) {
+    if (direct) {
+      if (num == 8) return;
+      num++;
+    } else {
+      if (num == 1) return;
+      num--;
     }
+    section6Div.innerHTML = `<p><img class="poto"></p>`;
+    let section6DivPoto = section6Div.querySelector(".poto");
+    section6DivPoto.setAttribute("src", "./images/pic_" + num + ".jpg");
+  }
 }
 
 // p165
 const section7Div = getSectionDivNum(7);
 // 재귀함수 정의
 function testFnc(num) {
-    if (num > 10) return; // 멈주는 조건: num이 10을 넘으면 종료
-    addParagraphToDiv(section7Div, num); // div에 <p>num</p>추가
-    testFnc(num + 1); // 다음 숫자로 재귀 호출
+  if (num > 10) return; // 멈주는 조건: num이 10을 넘으면 종료
+  addParagraphToDiv(section7Div, num); // div에 <p>num</p>추가
+  testFnc(num + 1); // 다음 숫자로 재귀 호출
 }
 function startTestFnc() {
-    updateDivIfExists(section7Div, function() {
-        testFnc(1); // 1부터 시작
-    });
+  updateDivIfExists(section7Div, function () {
+    testFnc(1); // 1부터 시작
+  });
 }
 
 // p169
 const section8Div = getSectionDivNum(8);
 let num = 100;
 function menu() {
-    num +=100;
-    addParagraphToDiv(section8Div, `첫 번째 menu: ${num}`);
+  num += 100;
+  addParagraphToDiv(section8Div, `첫 번째 menu: ${num}`);
 }
 function menu() {
-    addParagraphToDiv(section8Div, `두 번째 menu: ${num}`);
+  addParagraphToDiv(section8Div, `두 번째 menu: ${num}`);
 }
-updateDivIfExists(section7Div, function(){
-   menu();
-})
+updateDivIfExists(section7Div, function () {
+  menu();
+});
+
+// p170
+const section9Div = getSectionDivNum(9);
+
+updateDivIfExists(section9Div, function () {
+  let num = 100; // 지역 변수
+  function menu() {
+    num += 100; // num을 100 증가
+    addParagraphToDiv(section9Div, num);
+  }
+  menu();
+});
 
 // p171
+function CheckWeight(name, height, weight) {
+  this.userName = name;
+  this.userHeight = height;
+  this.userWeight = weight;
+  this.minWeight;
+  this.maxWeight;
+
+  this.getInfo = function () {
+    let str = "";
+    str += "이름: " + this.userName + ", ";
+    str += "키: " + this.userHeight + ", ";
+    str += "몸무게: " + this.userWeight + "<br>";
+    return str;
+  };
+
+  this.getResult = function () {
+    this.minWeight = (this.userHeight - 100) * 0.9 - 5;
+    this.maxWeight = (this.userHeight - 100) * 0.9 + 5;
+
+    if (
+      this.userWeight >= this.minWeight &&
+      this.userWeight <= this.maxWeight
+    ) {
+      return "정상 몸무게입니다";
+    } else if (this.userWeight < this.minWeight) {
+      return "정상 몸무게보다 미달입니다";
+    } else {
+      return "정상 몸무게보다 초과입니다";
+    }
+  };
+}
+
+const section10Div = getSectionDivNum(10);
+
+updateDivIfExists(section10Div, function () {
+  let jang = new CheckWeight("장보리", 168, 62);
+  let park = new CheckWeight("박달재", 180, 88);
+
+  console.log(jang);
+  console.log(park);
+
+  addParagraphToDiv(section10Div, jang.getInfo());
+  addParagraphToDiv(section10Div, jang.getResult());
+  addParagraphToDiv(section10Div, park.getInfo());
+  addParagraphToDiv(section10Div, park.getResult());
+});
+
+// p174
+function CheckWeight2(name, height, weight) {
+  this.userName = name;
+  this.userHeight = height;
+  this.userWeight = weight;
+  this.minWeight;
+  this.maxWeight;
+}
+
+CheckWeight2.prototype.getInfo = function () {
+  let str = "";
+  str += "이름: " + this.userName + ", ";
+  str += "키: " + this.userHeight + ", ";
+  str += "몸무게: " + this.userWeight + "<br>";
+  return str;
+};
+CheckWeight2.prototype.getResult = function () {
+  this.minWeight = (this.userHeight - 100) * 0.9 - 5;
+  this.maxWeight = (this.userHeight - 100) * 0.9 + 5;
+
+  if (this.userWeight >= this.minWeight && this.userWeight <= this.maxWeight) {
+    return "정상 몸무게입니다";
+  } else if (this.userWeight < this.minWeight) {
+    return "정상 몸무게보다 미달입니다";
+  } else {
+    return "정상 몸무게보다 초과입니다";
+  }
+};
+
+const section11Div = getSectionDivNum(11);
+
+updateDivIfExists(section11Div, function () {
+  let jang = new CheckWeight2("장보리", 168, 62);
+  let park = new CheckWeight2("박달재", 180, 88);
+
+  console.log(jang);
+  console.log(park);
+
+  addParagraphToDiv(section11Div, jang.getInfo());
+  addParagraphToDiv(section11Div, jang.getResult());
+  addParagraphToDiv(section11Div, park.getInfo());
+  addParagraphToDiv(section11Div, park.getResult());
+  addParagraphToDiv(
+    section11Div,
+    "jang.getResult === park.getResult: " + (jang.getResult === park.getResult)
+  );
+});
