@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* 기본 */
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+    width: 1000px;
+    height: 650px;
+    display: flex;
+}
+
+/* 헤더 */
+header {
+    width: 200px;
+    height: 650px;
+    background-color: #b3d988;
+}
+
+/* 메인 */
+.main {
+    width: 800px;
+    height: 650px;
+    background-color: #888;
+}
+
+/* 메인 > 슬라이드 애니메이션 */
+.slideContent {
+    height: 350px;
+    background-color: #1a8cff;
+}
+
+/* 메인 > 공지사항 .... */
+.content {
+    height: 200px;
+    background-color: #0059b3;
+}
+
+/* 메인 > 푸터 */
+footer {
+    height: 100px;
+    background-color: #b3d9ff;
+}
